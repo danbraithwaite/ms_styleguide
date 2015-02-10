@@ -1,0 +1,15 @@
+{
+  "name": "MSStyleGuide",
+  "version": "0.0.0",
+  "description": "Style guide for Marks and Spencer's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Elders <him@tomelders.com> (http://www.tomelders.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-stylus": "~0.2.1",
+    "angular": "~1.3.13"
+  }
+}
