@@ -41,12 +41,6 @@ function bundle(){
 	.pipe(reload({stream:true}));
 }
 
-gulp.task('serve', ['browser-sync', 'js'], function () {
-  gulp.watch(['./src/*.html'], reload({stream:true}));
-  gulp.watch(['./src/styles/**/*.styl'], ['styles']);
-  gulp.watch(['./src/images/**/*']);
-});
-
 /* 
 -----------------------------------------------------------------------------------------------------
 Stylus
@@ -73,4 +67,16 @@ gulp.task('browser-sync', function() {
     browserSync({
         proxy: 'ms-styleguide.dev'
     });
+});
+
+/*
+-----------------------------------------------------------------------------------------------------
+serve - your general purpose dev task
+-----------------------------------------------------------------------------------------------------
+*/
+
+gulp.task('serve', ['browser-sync', 'js'], function () {
+  gulp.watch(['./src/*.html'], reload);
+  gulp.watch(['./src/styles/**/*.styl'], ['styles']);
+  gulp.watch(['./src/images/**/*']);
 });
