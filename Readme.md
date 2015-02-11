@@ -1,13 +1,12 @@
 #M&S Styleguide
 
-## Requirments
+## Requirements
 - Git
 - Node.js
 - Stylus
+- Gulp.js
 
-
-##Install
-
+##Getting Started
 	git clone https://github.com/gargantuan/ms_styleguide.git
 	npm install
-	npm start
+	gulp serve
