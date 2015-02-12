@@ -9,11 +9,12 @@ var watchify = require('watchify');
 var browserify = require('browserify');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-//var bootstrap = require('bootstrap-styl');
 var jeet = require('jeet');
 var stylus = require('gulp-stylus');
 var rename = require('gulp-rename');
 var autoprefixer = require('autoprefixer-stylus');
+var axis = require('axis'); // library for Stylus
+var rupture = require('rupture'); // Break points
 
 //var dist = false;
 
@@ -47,10 +48,17 @@ Stylus
 -----------------------------------------------------------------------------------------------------
 */
 
+var browsers = { browsers: ['last 2 version'] };
+
 gulp.task('styles', function(){
 	gulp.src('./src/styles/index.styl')
 	.pipe(stylus({
-		use: [autoprefixer(), jeet()]
+		use: [
+				autoprefixer(browsers),
+				axis(),
+				rupture(),
+				jeet()
+			]
 	}))
 	.pipe(rename('bundle.css'))
 	.pipe(gulp.dest('./src'))
