@@ -7,14 +7,27 @@ body, html
 * 
 	box-sizing border-box
 
-section
-	center(1200px)
+content-row
+	display block
+	> *
+		center(pad: 20px)
 	text-align center
+	center(padding: 10)
 	
+text-block
+	display block
+	text-align center
+	span(2/4)
+	shift(1/4)
+	+below(small)
+		span(1)
+		unshift()
+		
 h1
 	font-family 'MandS Leeds W03 Light'
 	font-size 60px
 	line-height 60px
+	text-transform uppercase
 	
 h2, h2.leeds
 	font-family 'MandS Leeds W03 Light'
@@ -24,10 +37,13 @@ h2, h2.leeds
 h2.london
 	font-family 'MandS London W01 Regular'
 	
-h3
+h3, h3.london
 	font-family 'MandS London W01 Regular'
 	font-size 25px
 	line-height 35px
+
+h3.leeds
+	font-family 'MandS Leeds W03'
 	
 h4
 	font-family 'MandS London W01 Regular'
@@ -45,3 +61,8 @@ p.alternate
 	color darkGrey
 	font-size 13px
 	line-height 20px
+	
+a 
+	border-bottom 1px solid black
+	text-decoration none
+	color black
