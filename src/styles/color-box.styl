@@ -1,0 +1,63 @@
+color-box-name
+	@extend p
+	display block
+	line-height 0px
+	padding-top 20px
+	padding-bottom 10px
+	border-top lightGrey 1px solid
+	
+color-box-hex
+	display block
+	@extend p.alternate
+	margin 0 0 10px 0
+	
+ color-box
+	column(1/5, gutter: .9)
+	border-radius 5px
+	border lightGrey 1px solid
+	display block
+	background-color white
+	margin-bottom 10px
+	&:before
+		margin 5%
+		width 90%
+		padding-bottom 90%
+		
+	&.black:before
+		background-color black
+	
+	&.dark-grey:before
+		background-color darkGrey
+		
+	&.medium-grey:before
+		background-color mediumGrey
+	
+	&.light-grey:before
+		background-color lightGrey
+	
+	&.background-grey:before
+		background-color backgroundGrey
+			
+	&.green:before
+		background-color green
+		
+	&.red:before
+		background-color red
+		
+	&.success-green:before
+		background-color successGreen
+
+	&.error-red:before
+		background-color errorRed
+
+	&.error-pink:before
+		background-color errorPink
+
+	&.warning-yellow:before
+		background-color warningYellow
+
+	&.warning-yellow-bg:before
+		background-color warningYellowBg
+
+	&.primary-cta-hover-color:before
+		background-color primaryCtaHoverColor
