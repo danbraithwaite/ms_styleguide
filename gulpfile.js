@@ -15,20 +15,24 @@ var rename = require('gulp-rename');
 var autoprefixer = require('autoprefixer-stylus');
 var axis = require('axis'); // library for Stylus
 var rupture = require('rupture'); // Break points
-var includer = require('gulp-html-ssi');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var fileInclude = require('gulp-file-include');
 
 /*
 -----------------------------------------------------------------------------------------------------
-SSI
-Using gulp-html-ssi so we can fragment the HTML files
+HTML
+Using gulp-file-iclude so we can fragment the HTML files
+https://www.npmjs.com/package/gulp-file-include
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('htmlSSI', function(){
-	gulp.src('./src/html/**/*.html')
-	.pipe(includer())
+gulp.task('html', function(){
+	gulp.src('./src/html/*.html')
+	.pipe(fileInclude({
+		prefix: '@@',
+		basePath: '@file'
+	}))
 	.pipe(gulp.dest('./build'))
 	.pipe(reload({stream:true}));
 });
@@ -127,8 +131,8 @@ serve - your general purpose dev task. Run once, sit back, and relax!
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('serve', ['browser-sync', 'js', 'htmlSSI', 'styles', 'images', 'fonts'], function () {
-  gulp.watch(['./src/**/*.html'], ['htmlSSI']);
+gulp.task('serve', ['browser-sync', 'js', 'html', 'styles', 'images', 'fonts'], function () {
+  gulp.watch(['./src/**/*.html'], ['html']);
   gulp.watch(['./src/styles/**/*.styl'], ['styles']);
   gulp.watch(['./src/images/**/*'], ['images']);
   gulp.watch(['./src/fonts/**/*'], ['fonts']);

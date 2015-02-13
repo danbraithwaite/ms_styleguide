@@ -27,8 +27,8 @@
     "axis": "~0.3.0",
     "rupture": "~0.6.1",
     "jeet": "~6.1.2",
-    "gulp-html-ssi": "0.0.92",
     "gulp-imagemin": "~2.2.0",
-    "imagemin-pngquant": "~4.0.0"
+    "imagemin-pngquant": "~4.0.0",
+    "gulp-file-include": "~0.8.0"
   }
 }
