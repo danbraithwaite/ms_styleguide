@@ -15,8 +15,23 @@ var rename = require('gulp-rename');
 var autoprefixer = require('autoprefixer-stylus');
 var axis = require('axis'); // library for Stylus
 var rupture = require('rupture'); // Break points
+var includer = require('gulp-html-ssi');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
-//var dist = false;
+/*
+-----------------------------------------------------------------------------------------------------
+SSI
+Using gulp-html-ssi so we can fragment the HTML files
+-----------------------------------------------------------------------------------------------------
+*/
+
+gulp.task('htmlSSI', function(){
+	gulp.src('./src/html/**/*.html')
+	.pipe(includer())
+	.pipe(gulp.dest('./build'))
+	.pipe(reload({stream:true}));
+});
 
 /*
 -----------------------------------------------------------------------------------------------------
@@ -38,7 +53,7 @@ function bundle(){
 	.pipe(buffer())
 	.pipe(sourcemaps.init({loadMaps: true}))
 	.pipe(sourcemaps.write('./'))
-	.pipe(gulp.dest('./src'))
+	.pipe(gulp.dest('./build'))
 	.pipe(reload({stream:true}));
 }
 
@@ -61,7 +76,21 @@ gulp.task('styles', function(){
 			]
 	}))
 	.pipe(rename('bundle.css'))
-	.pipe(gulp.dest('./src'))
+	.pipe(gulp.dest('./build'))
+	.pipe(reload({stream:true}));
+});
+
+/*
+Images
+*/
+gulp.task('images', function () {
+	gulp.src('src/images/**/*')
+	.pipe(imagemin({
+		progressive: true,
+		svgoPlugins: [{removeViewBox: false}],
+		use: [pngquant()]
+	}))
+	.pipe(gulp.dest('./build/images'))
 	.pipe(reload({stream:true}));
 });
 
@@ -83,8 +112,8 @@ serve - your general purpose dev task
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('serve', ['browser-sync', 'js'], function () {
-  gulp.watch(['./src/*.html'], reload);
+gulp.task('serve', ['browser-sync', 'js', 'htmlSSI', 'styles', 'images'], function () {
+  gulp.watch(['./src/**/*.html'], ['htmlSSI']);
   gulp.watch(['./src/styles/**/*.styl'], ['styles']);
   gulp.watch(['./src/images/**/*']);
 });
