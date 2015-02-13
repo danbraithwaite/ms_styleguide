@@ -18,6 +18,7 @@ var rupture = require('rupture'); // Break points
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var fileInclude = require('gulp-file-include');
+var sprite = require('css-sprite').stream;
 
 /*
 -----------------------------------------------------------------------------------------------------
@@ -115,6 +116,25 @@ gulp.task('images', function () {
 
 /*
 -----------------------------------------------------------------------------------------------------
+Icons
+-----------------------------------------------------------------------------------------------------
+*/
+
+gulp.task('icons', function () {
+	return gulp.src('./src/icons/*.png')
+		.pipe(sprite({
+			base64: true,
+			style: 'icons.styl',
+			processor: 'stylus',
+			retina: true
+	}))
+	.pipe(gulp.dest('./src/styles'))
+	.pipe(reload({stream:true}));
+});
+
+
+/*
+-----------------------------------------------------------------------------------------------------
 broswser-sync
 -----------------------------------------------------------------------------------------------------
 */
@@ -131,9 +151,10 @@ serve - your general purpose dev task. Run once, sit back, and relax!
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('serve', ['browser-sync', 'js', 'html', 'styles', 'images', 'fonts'], function () {
+gulp.task('serve', ['browser-sync', 'js', 'html', 'icons', 'styles', 'images', 'fonts'], function () {
   gulp.watch(['./src/html/*.html'], ['html']);
   gulp.watch(['./src/styles/**/*.styl'], ['styles']);
   gulp.watch(['./src/images/**/*'], ['images']);
   gulp.watch(['./src/fonts/**/*'], ['fonts']);
+  gulp.watch(['./src/icons/*.png'], ['icons', 'styles']);
 });

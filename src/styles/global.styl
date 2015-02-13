@@ -1,7 +1,7 @@
 body, html 
 	padding 0
 	margin 0
-	background-color backgroundGrey
+	background-color #f8f8f8
 	font-smoothing antialiased !important
 	
 * 
@@ -21,17 +21,24 @@ In addition, we're using a different clear fix to the one Jeet reccomends.
 section
 	> *
 		display block
-		center()
+		center(pad: 10px)
+		
+		> h4
+			text-align center
+
 	&:after
 		content:"";
 		display:table;
-		clear:both;
-
+		clear:both
 	
 text-block
 	col(2/4)
 	shift(1/4)
 	text-align center
+	
+	+below(medium)
+		center(pad: 20px)
+		unshift()
 	
 h1
 	font-family 'MandS Leeds W03 Light'
@@ -64,11 +71,11 @@ h4
 p
 	font-family 'MandS London W01 Regular';
 	font-size 15px
-	color darkGrey
+	color black
 	line-height 22px
 
 p.alternate
-	color darkGrey
+	color black
 	font-size 13px
 	line-height 20px
 	
@@ -76,3 +83,4 @@ a
 	border-bottom 1px solid black
 	text-decoration none
 	color black
+	

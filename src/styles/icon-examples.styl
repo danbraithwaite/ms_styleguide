@@ -1,0 +1,549 @@
+
+center-sprite($sprite)
+	position absolute
+	top 20%
+	left 50%
+	margin-left -1 * (sprite-width($sprite) / 2)
+	
+
+icon-swatch
+	> div 
+		margin-top 15px
+		margin-bottom 20px
+		center()
+	
+	padding 0
+	padding-top 120px
+	position relative
+	border-radius 4px
+	background #fff
+	border 1px solid lightGrey
+	col(1/8, gutter: 2, cycle: 8)
+	margin-bottom 2%
+	
+	+below(xlarge)
+		col(1/4, gutter: 2, cycle: 4)
+		
+	+below(medium)
+		col(1/2, gutter: 2, cycle: 2)
+		
+	
+icon-swatch-title
+	@extend p.alternate
+	display block
+	line-height 51px
+	text-align center
+	border-top 1px solid lightGrey
+
+.icon.more
+	sprite($more)
+	center-sprite($more)
+	
+.icon.amex
+	sprite($amex)
+	center-sprite($amex)
+	
+.icon.visa
+	sprite($visa)
+	center-sprite($visa)
+	
+.icon.arrow-up
+	sprite($arrow-up)
+	center-sprite($arrow-up)
+	
+.icon.arrow-down
+	sprite($arrow-down)
+	center-sprite($arrow-down)
+	
+.icon.close
+	sprite($close)
+	center-sprite($close)
+	
+.icon.menu
+	sprite($menu)
+	center-sprite($menu)
+	
+.icon.ms-debit-card
+	sprite($ms-debit-card)
+	center-sprite($ms-debit-card)
+	
+.icon.tick
+	sprite($tick)
+	center-sprite($tick)
+	
+.icon.cross
+	sprite($cross)
+	center-sprite($cross)
+	
+.icon.collect-in-store
+	sprite($collect-in-store)
+	center-sprite($collect-in-store)
+	
+.icon.delivery
+	sprite($delivery)
+	center-sprite($delivery)
+	
+.icon.new
+	sprite($new)
+	center-sprite($new)
+	
+.icon.serves
+	sprite($serves)
+	center-sprite($serves)
+	
+.icon.info
+	sprite($info)
+	center-sprite($info)
+	
+.icon.google-plus
+	sprite($google-plus)
+	center-sprite($google-plus)
+	
+.icon.jcb
+	sprite($jcb)
+	center-sprite($jcb)
+	
+.icon.arrow-right
+	sprite($arrow-right)
+	center-sprite($arrow-right)
+	
+.icon.scan
+	sprite($scan)
+	center-sprite($scan)
+	
+.icon.ms-budget-card
+	sprite($ms-budget-card)
+	center-sprite($ms-budget-card)
+	
+.icon.email
+	sprite($email)
+	center-sprite($email)
+	
+.icon.visa-electron
+	sprite($visa-electron)
+	center-sprite($visa-electron)
+	
+.icon.mastercard
+	sprite($mastercard)
+	center-sprite($mastercard)
+	
+.icon.maestro
+	sprite($maestro)
+	center-sprite($maestro)
+	
+.icon.arrow-left
+	sprite($arrow-left)
+	center-sprite($arrow-left)
+	
+.icon.ms-credit-card
+	sprite($ms-credit-card)
+	center-sprite($ms-credit-card)
+	
+.icon.ms-charge-card
+	sprite($ms-charge-card)
+	center-sprite($ms-charge-card)
+	
+.icon.pintrest
+	sprite($pintrest)
+	center-sprite($pintrest)
+	
+.icon.youtube
+	sprite($youtube)
+	center-sprite($youtube)
+	
+.icon.open-window
+	sprite($open-window)
+	center-sprite($open-window)
+	
+.icon.pause
+	sprite($pause)
+	center-sprite($pause)
+	
+.icon.instagram
+	sprite($instagram)
+	center-sprite($instagram)
+	
+.icon.loading
+	sprite($loading)
+	center-sprite($loading)
+	
+.icon.play
+	sprite($play)
+	center-sprite($play)
+	
+.icon.full-screen-alt
+	sprite($full-screen-alt)
+	center-sprite($full-screen-alt)
+	
+.icon.full-screen
+	sprite($full-screen)
+	center-sprite($full-screen)
+	
+.icon.zoom
+	sprite($zoom)
+	center-sprite($zoom)
+	
+.icon.twitter
+	sprite($twitter)
+	center-sprite($twitter)
+	
+.icon.loving-the-planet
+	sprite($loving-the-planet)
+	center-sprite($loving-the-planet)
+	
+.icon.search
+	sprite($search)
+	center-sprite($search)
+	
+.icon.shop
+	sprite($shop)
+	center-sprite($shop)
+	
+.icon.edit
+	sprite($edit)
+	center-sprite($edit)
+	
+.icon.add-card
+	sprite($add-card)
+	center-sprite($add-card)
+	
+.icon.star
+	sprite($star)
+	center-sprite($star)
+	
+.icon.facebook
+	sprite($facebook)
+	center-sprite($facebook)
+	
+.icon.download
+	sprite($download)
+	center-sprite($download)
+	
+.icon.zoom-alt
+	sprite($zoom-alt)
+	center-sprite($zoom-alt)
+	
+.icon.int-delivery
+	sprite($int-delivery)
+	center-sprite($int-delivery)
+	
+.icon.saved-items
+	sprite($saved-items)
+	center-sprite($saved-items)
+	
+.icon.calendar
+	sprite($calendar)
+	center-sprite($calendar)
+	
+.icon.british-beef
+	sprite($british-beef)
+	center-sprite($british-beef)
+	
+.icon.recently-viewed
+	sprite($recently-viewed)
+	center-sprite($recently-viewed)
+	
+.icon.sign-in-alt
+	sprite($sign-in-alt)
+	center-sprite($sign-in-alt)
+	
+.icon.sign-in
+	sprite($sign-in)
+	center-sprite($sign-in)
+	
+.icon.contact-post
+	sprite($contact-post)
+	center-sprite($contact-post)
+	
+.icon.shopping-bag
+	sprite($shopping-bag)
+	center-sprite($shopping-bag)
+	
+.icon.map-marker
+	sprite($map-marker)
+	center-sprite($map-marker)
+	
+.icon.netherlands
+	sprite($netherlands)
+	center-sprite($netherlands)
+	
+.icon.open-hours-wait
+	sprite($open-hours-wait)
+	center-sprite($open-hours-wait)
+	
+.icon.error
+	sprite($error)
+	center-sprite($error)
+	
+.icon.germany
+	sprite($germany)
+	center-sprite($germany)
+	
+.icon.ulk
+	sprite($ulk)
+	center-sprite($ulk)
+	
+.icon.belgium
+	sprite($belgium)
+	center-sprite($belgium)
+	
+.icon.spain
+	sprite($spain)
+	center-sprite($spain)
+	
+.icon.ready-to-cook
+	sprite($ready-to-cook)
+	center-sprite($ready-to-cook)
+	
+.icon.attention
+	sprite($attention)
+	center-sprite($attention)
+	
+.icon.france
+	sprite($france)
+	center-sprite($france)
+	
+.icon.italy
+	sprite($italy)
+	center-sprite($italy)
+	
+.icon.luxembourg
+	sprite($luxembourg)
+	center-sprite($luxembourg)
+	
+.icon.austria
+	sprite($austria)
+	center-sprite($austria)
+	
+.icon.confirmation
+	sprite($confirmation)
+	center-sprite($confirmation)
+	
+.icon.imagining
+	sprite($imagining)
+	center-sprite($imagining)
+	
+.icon.thinking
+	sprite($thinking)
+	center-sprite($thinking)
+	
+.icon.tag-sale
+	sprite($tag-sale)
+	center-sprite($tag-sale)
+	
+.icon.mobile
+	sprite($mobile)
+	center-sprite($mobile)
+	
+.icon.supercrease
+	sprite($supercrease)
+	center-sprite($supercrease)
+	
+.icon.freshfeet
+	sprite($freshfeet)
+	center-sprite($freshfeet)
+	
+.icon.stormwear
+	sprite($stormwear)
+	center-sprite($stormwear)
+	
+.icon.store-locator
+	sprite($store-locator)
+	center-sprite($store-locator)
+	
+.icon.non-iron
+	sprite($non-iron)
+	center-sprite($non-iron)
+	
+.icon.top-review
+	sprite($top-review)
+	center-sprite($top-review)
+	
+.icon.stay-new
+	sprite($stay-new)
+	center-sprite($stay-new)
+	
+.icon.easy-iron
+	sprite($easy-iron)
+	center-sprite($easy-iron)
+	
+.icon.investigating
+	sprite($investigating)
+	center-sprite($investigating)
+	
+.icon.physical-dev
+	sprite($physical-dev)
+	center-sprite($physical-dev)
+	
+.icon.payment
+	sprite($payment)
+	center-sprite($payment)
+	
+.icon.creating
+	sprite($creating)
+	center-sprite($creating)
+	
+.icon.print
+	sprite($print)
+	center-sprite($print)
+	
+.icon.prob-solving
+	sprite($prob-solving)
+	center-sprite($prob-solving)
+	
+.icon.crease-resistant
+	sprite($crease-resistant)
+	center-sprite($crease-resistant)
+	
+.icon.size-guide
+	sprite($size-guide)
+	center-sprite($size-guide)
+	
+.icon.account
+	sprite($account)
+	center-sprite($account)
+	
+.icon.expandicuff
+	sprite($expandicuff)
+	center-sprite($expandicuff)
+	
+.icon.adjust-waist
+	sprite($adjust-waist)
+	center-sprite($adjust-waist)
+	
+.icon.writing
+	sprite($writing)
+	center-sprite($writing)
+	
+.icon.returns-policy
+	sprite($returns-policy)
+	center-sprite($returns-policy)
+	
+.icon.contact-phone
+	sprite($contact-phone)
+	center-sprite($contact-phone)
+	
+.icon.discovering
+	sprite($discovering)
+	center-sprite($discovering)
+	
+.icon.communicate
+	sprite($communicate)
+	center-sprite($communicate)
+	
+.icon.stainaway
+	sprite($stainaway)
+	center-sprite($stainaway)
+	
+.icon.scruff-resist
+	sprite($scruff-resist)
+	center-sprite($scruff-resist)
+	
+.icon.recipes
+	sprite($recipes)
+	center-sprite($recipes)
+	
+.icon.comments
+	sprite($comments)
+	center-sprite($comments)
+	
+.icon.reading
+	sprite($reading)
+	center-sprite($reading)
+	
+.icon.pure-cotton
+	sprite($pure-cotton)
+	center-sprite($pure-cotton)
+	
+.icon.disposal-recyl
+	sprite($disposal-recyl)
+	center-sprite($disposal-recyl)
+	
+.icon.fairtrade
+	sprite($fairtrade)
+	center-sprite($fairtrade)
+	
+.icon.gift
+	sprite($gift)
+	center-sprite($gift)
+	
+.icon.ready-to-eat
+	sprite($ready-to-eat)
+	center-sprite($ready-to-eat)
+	
+.icon.contains-nuts
+	sprite($contains-nuts)
+	center-sprite($contains-nuts)
+	
+.icon.cruelty-free
+	sprite($cruelty-free)
+	center-sprite($cruelty-free)
+	
+.icon.gluten-free
+	sprite($gluten-free)
+	center-sprite($gluten-free)
+	
+.icon.dairy-free
+	sprite($dairy-free)
+	center-sprite($dairy-free)
+	
+.icon.eat-well
+	sprite($eat-well)
+	center-sprite($eat-well)
+	
+.icon.freeze-able
+	sprite($freeze-able)
+	center-sprite($freeze-able)
+	
+.icon.vegetarian
+	sprite($vegetarian)
+	center-sprite($vegetarian)
+	
+.icon.toilet-alt
+	sprite($toilet-alt)
+	center-sprite($toilet-alt)
+	
+.icon.eco-factory
+	sprite($eco-factory)
+	center-sprite($eco-factory)
+	
+.icon.baby-changing-alt
+	sprite($baby-changing-alt)
+	center-sprite($baby-changing-alt)
+	
+.icon.baby-changing
+	sprite($baby-changing)
+	center-sprite($baby-changing)
+	
+.icon.collect-by-car-alt
+	sprite($collect-by-car-alt)
+	center-sprite($collect-by-car-alt)
+	
+.icon.car-parking
+	sprite($car-parking)
+	center-sprite($car-parking)
+	
+.icon.toilet
+	sprite($toilet)
+	center-sprite($toilet)
+	
+.icon.car-parking-alt
+	sprite($car-parking-alt)
+	center-sprite($car-parking-alt)
+	
+.icon.collect-by-car
+	sprite($collect-by-car)
+	center-sprite($collect-by-car)
+	
+.icon.add-address
+	sprite($add-address)
+	center-sprite($add-address)
+	
+.icon.tablet-hand
+	sprite($tablet-hand)
+	center-sprite($tablet-hand)
+	
+.icon.no-img-avail
+	sprite($no-img-avail)
+	center-sprite($no-img-avail)
+	
