@@ -2,11 +2,12 @@
 Jeet uses floats for it's grid system. To get the layout and reflow
 for this page as specified in the design, I've had to use inline-block
 */
-		
-color-box-group
-	text-align center
 
-color-box
+color-swatch-group
+	display block
+	text-align center
+		
+color-swatch
 	text-align center
 	border 1px solid lightGrey
 	border-radius 5px
@@ -39,7 +40,7 @@ color-box
 		&.{key}:before
 			background-color value
 
-	color-box-name
+	color-swatch-name
 		@extend p
 		display block
 		line-height 0px
@@ -47,7 +48,7 @@ color-box
 		padding-bottom 10px
 		border-top lightGrey 1px solid
 		
-	color-box-hex
+	color-swatch-hex
 		display block
 		@extend p.alternate
 		margin 0 0 10px 0
@@ -55,6 +56,7 @@ color-box
 		
 
 tag-example
+	text-align center
 	h1, h2, h3, h4, p 
 		display inline-block
 		margin-bottom 0

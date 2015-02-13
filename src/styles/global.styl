@@ -7,22 +7,32 @@ body, html
 * 
 	box-sizing border-box
 
-content-row
-	display block
+/* 
+There's a bit of magic happening here with the `section` element.
+
+We're using custom HTML elements (Yep, they're valid HTML5) and custom
+elements need to have their display property set. Typically, you'll 
+want them to be display block. And since we're making liberal use of the
+section tag, we may as well assume that the first child of <section> should 
+have it's display property set to `block`
+
+In addition, we're using a different clear fix to the one Jeet reccomends.
+*/
+section
 	> *
-		center(pad: 20px)
-	text-align center
-	center(padding: 10)
+		display block
+		center()
+	&:after
+		content:"";
+		display:table;
+		clear:both;
+
 	
 text-block
-	display block
-	text-align center
-	span(2/4)
+	col(2/4)
 	shift(1/4)
-	+below(small)
-		span(1)
-		unshift()
-		
+	text-align center
+	
 h1
 	font-family 'MandS Leeds W03 Light'
 	font-size 60px
