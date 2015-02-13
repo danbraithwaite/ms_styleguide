@@ -66,6 +66,7 @@ Stylus
 var browsers = { browsers: ['last 2 version'] };
 
 gulp.task('styles', function(){
+
 	gulp.src('./src/styles/index.styl')
 	.pipe(stylus({
 		use: [
@@ -80,8 +81,22 @@ gulp.task('styles', function(){
 	.pipe(reload({stream:true}));
 });
 
+/* 
+-----------------------------------------------------------------------------------------------------
+Fonts
+-----------------------------------------------------------------------------------------------------
+*/
+
+gulp.task('fonts', function(){
+	gulp.src('./src/fonts/**/*')
+	.pipe(gulp.dest('./build/fonts'))
+	.pipe(reload({stream:true}));
+});
+
 /*
+-----------------------------------------------------------------------------------------------------
 Images
+-----------------------------------------------------------------------------------------------------
 */
 gulp.task('images', function () {
 	gulp.src('src/images/**/*')
@@ -108,12 +123,13 @@ gulp.task('browser-sync', function() {
 
 /*
 -----------------------------------------------------------------------------------------------------
-serve - your general purpose dev task
+serve - your general purpose dev task. Run once, sit back, and relax!
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('serve', ['browser-sync', 'js', 'htmlSSI', 'styles', 'images'], function () {
+gulp.task('serve', ['browser-sync', 'js', 'htmlSSI', 'styles', 'images', 'fonts'], function () {
   gulp.watch(['./src/**/*.html'], ['htmlSSI']);
   gulp.watch(['./src/styles/**/*.styl'], ['styles']);
-  gulp.watch(['./src/images/**/*']);
+  gulp.watch(['./src/images/**/*'], ['images']);
+  gulp.watch(['./src/fonts/**/*'], ['fonts']);
 });
