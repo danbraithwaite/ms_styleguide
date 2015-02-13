@@ -132,7 +132,7 @@ serve - your general purpose dev task. Run once, sit back, and relax!
 */
 
 gulp.task('serve', ['browser-sync', 'js', 'html', 'styles', 'images', 'fonts'], function () {
-  gulp.watch(['./src/**/*.html'], ['html']);
+  gulp.watch(['./src/html/*.html'], ['html']);
   gulp.watch(['./src/styles/**/*.styl'], ['styles']);
   gulp.watch(['./src/images/**/*'], ['images']);
   gulp.watch(['./src/fonts/**/*'], ['fonts']);
