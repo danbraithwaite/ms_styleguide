@@ -22,23 +22,18 @@ section
 	> *
 		display block
 		center(pad: 10px, gutter: 1.66667 )
+		text-align center
 		
-		> h4
-			text-align center
-
+	> header 
+		center(600px)
+		+below(medium)
+			center(pad: 20px)
+		
 	&:after
 		content:"";
 		display:table;
 		clear:both
 	
-text-block
-	col(2/4)
-	shift(1/4)
-	text-align center
-	
-	+below(medium)
-		center(pad: 20px)
-		unshift()
 	
 h1
 	font-family 'MandS Leeds W03 Light'
