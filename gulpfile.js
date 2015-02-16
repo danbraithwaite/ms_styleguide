@@ -79,7 +79,8 @@ gulp.task('styles', function(){
 				axis(),
 				rupture(),
 				jeet()
-			]
+			],
+		compress: true
 	}))
 	.pipe(rename('bundle.css'))
 	.pipe(gulp.dest('./build'))
@@ -123,11 +124,14 @@ Icons
 gulp.task('icons', function () {
 	return gulp.src('./src/icons/*.png')
 		.pipe(sprite({
-			base64: true,
+			cssPath: '/images',
+			out: './src/images',
+			format: 'png',
 			style: 'icons.styl',
 			processor: 'stylus',
 			retina: true,
-			margin: 10
+			margin: 4,
+			template: './css-sprite-template.mustache'
 	}))
 	.pipe(gulp.dest('./src/styles'))
 	.pipe(reload({stream:true}));
