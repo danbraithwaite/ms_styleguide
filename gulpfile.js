@@ -2,6 +2,8 @@
 
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var watch = require('gulp-watch');
+var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -29,7 +31,9 @@ https://www.npmjs.com/package/gulp-file-include
 */
 
 gulp.task('html', function(){
-	gulp.src('./src/html/*.html')
+	gulp.src('./src/html/**/*.html')
+	.pipe(watch('./src/html/**/*.html'))
+	.pipe(plumber())
 	.pipe(fileInclude({
 		prefix: '@@',
 		basePath: '@file'
@@ -55,6 +59,8 @@ function bundle(){
 	return bundler.bundle()
 	.on('error', gutil.log.bind(gutil, 'Browserify Error'))
 	.pipe(source('bundle.js'))
+	.pipe(watch('./src/js/**/*'))
+	.pipe(plumber())
 	.pipe(buffer())
 	.pipe(sourcemaps.init({loadMaps: true}))
 	.pipe(sourcemaps.write('./'))
@@ -73,6 +79,8 @@ var browsers = { browsers: ['last 2 version'] };
 gulp.task('styles', function(){
 
 	gulp.src('./src/styles/index.styl')
+	.pipe(watch('./src/styles/**/*.styl'))
+	.pipe(plumber())
 	.pipe(stylus({
 		use: [
 				autoprefixer(browsers),
@@ -94,6 +102,8 @@ Fonts
 
 gulp.task('fonts', function(){
 	gulp.src('./src/fonts/**/*')
+	.pipe(watch('./src/fonts/**/*'))
+	.pipe(plumber())
 	.pipe(gulp.dest('./build/fonts'))
 	.pipe(reload({stream:true}));
 });
@@ -122,11 +132,14 @@ Icons
 
 gulp.task('icons', function () {
 	return gulp.src('./src/icons/*.png')
+		.pipe(watch('./src/icons/*.png'))
+		.pipe(plumber())
 		.pipe(sprite({
 			base64: true,
 			style: 'icons.styl',
 			processor: 'stylus',
-			retina: true
+			retina: true,
+			margin: 10
 	}))
 	.pipe(gulp.dest('./src/styles'))
 	.pipe(reload({stream:true}));
@@ -147,14 +160,8 @@ gulp.task('browser-sync', function() {
 
 /*
 -----------------------------------------------------------------------------------------------------
-serve - your general purpose dev task. Run once, sit back, and relax!
+default - your general purpose dev task. Run once, sit back, and relax!
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('serve', ['browser-sync', 'js', 'html', 'icons', 'styles', 'images', 'fonts'], function () {
-  gulp.watch(['./src/html/*.html'], ['html']);
-  gulp.watch(['./src/styles/**/*.styl'], ['styles']);
-  gulp.watch(['./src/images/**/*'], ['images']);
-  gulp.watch(['./src/fonts/**/*'], ['fonts']);
-  gulp.watch(['./src/icons/*.png'], ['icons', 'styles']);
-});
+gulp.task('default', ['browser-sync', 'js', 'html', 'icons', 'styles', 'images', 'fonts']);
