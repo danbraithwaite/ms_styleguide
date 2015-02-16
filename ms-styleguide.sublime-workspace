@@ -4,16 +4,104 @@
 		"selected_items":
 		[
 			[
+				"succ",
+				"success-banner-icon"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"su",
+				"success-banner-icon"
+			],
+			[
+				"rer",
+				"require"
+			],
+			[
+				"spr",
+				"sprite-width"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"html",
+				"htmlSSI"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"cont",
+				"content-row"
+			],
+			[
+				"tex",
+				"text-block"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bu",
+				"bundle"
+			],
+			[
+				"bun",
+				"bundler"
+			],
+			[
+				"gu",
+				"gutil"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"sou",
+				"source"
+			],
+			[
+				"bro",
+				"browserify"
+			],
+			[
+				"wat",
+				"watcher"
+			],
+			[
 				"br",
 				"broswserSync"
 			],
 			[
 				"sour",
 				"sourcemaps"
-			],
-			[
-				"bun",
-				"bundle"
 			],
 			[
 				"im",
@@ -42,10 +130,6 @@
 			[
 				"sam",
 				"sampleIm"
-			],
-			[
-				"re",
-				"require"
 			],
 			[
 				"bo",
@@ -264,10 +348,6 @@
 				"mag-spikey-ball__direction-group"
 			],
 			[
-				"ma",
-				"mag-spikey-ball__paths"
-			],
-			[
 				"sele",
 				"select"
 			],
@@ -434,99 +514,11 @@
 			[
 				"O",
 				"OrderGen"
-			],
-			[
-				"docTy",
-				"docTypeId"
-			],
-			[
-				"pop",
-				"popoverElement"
-			],
-			[
-				"fn",
-				"function"
-			],
-			[
-				"tr",
-				"triangleHeight"
-			],
-			[
-				"st",
-				"strokeWidth"
-			],
-			[
-				"fi",
-				"fill-opacity"
-			],
-			[
-				"mag",
-				"magSquarePoint"
-			],
-			[
-				"pre",
-				"previousValues"
-			],
-			[
-				"data",
-				"dataRange"
-			],
-			[
-				"err",
-				"errorReporter"
-			],
-			[
-				"l",
-				"length"
-			],
-			[
-				"tran",
-				"transform"
-			],
-			[
-				"no",
-				"nodeScale"
-			],
-			[
-				"_",
-				"_map"
-			],
-			[
-				"coo",
-				"markerCoordPair"
-			],
-			[
-				"_m",
-				"_gMarkers"
-			],
-			[
-				"_map",
-				"_mapOptions"
-			],
-			[
-				"map",
-				"mapService"
-			],
-			[
-				"game",
-				"gameId"
-			],
-			[
-				"Gam",
-				"GameService"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 1641,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Gulp Scripts",
 	"command_palette":
@@ -535,12 +527,52 @@
 		"selected_items":
 		[
 			[
+				"LIP",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"REMO",
+				"Package Control: Remove Package"
+			],
+			[
+				"PA",
+				"Package Control: Remove Package"
+			],
+			[
+				"PACK",
+				"Package Control: Install Package"
+			],
+			[
 				"pa",
 				"Package Control: Install Package"
 			],
 			[
+				"lor",
+				"LoremIpsum: (30) lots"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
 				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
 				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
 			],
 			[
 				"linter",
@@ -563,24 +595,12 @@
 				"SublimeLinter: Next Error"
 			],
 			[
-				"remo",
-				"Package Control: Remove Package"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
 			[
 				"enable",
 				"Package Control: Enable Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"pack",
-				"Package Control: List Packages"
 			],
 			[
 				"insa",
@@ -603,7 +623,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 436.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -633,13 +653,93 @@
 	"expanded_folders":
 	[
 		"/Users/tomelders/Development/MS_Styleguide",
-		"/Users/tomelders/Development/MS_Styleguide/src"
+		"/Users/tomelders/Development/MS_Styleguide/build/images",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/css-sprite",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/css-sprite/bin",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/css-sprite/lib",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/css-sprite/lib/templates",
+		"/Users/tomelders/Development/MS_Styleguide/src",
+		"/Users/tomelders/Development/MS_Styleguide/src/html",
+		"/Users/tomelders/Development/MS_Styleguide/src/images",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles"
 	],
 	"file_history":
 	[
-		"/Users/tomelders/Development/MS_Styleguide/src/index.js",
-		"/Users/tomelders/Development/MS_Styleguide/dist/bundle.js",
 		"/Users/tomelders/Development/MS_Styleguide/gulpfile.js",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/alerts.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/alerts.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/colors.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/global.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/global.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/buttons.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/buttons.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/index.styl",
+		"/Users/tomelders/Development/MS_Styleguide/build/bundle.css",
+		"/Users/tomelders/Development/MS_Styleguide/build/global.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/icons.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/icon-examples.styl",
+		"/Users/tomelders/Development/MS_Styleguide/css-sprite-template.mustache",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/index.html",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/gulp-util/lib/isNull.js",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/icons.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/new-icons.styl",
+		"/Users/tomelders/Development/MS_Styleguide/build/index.html",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/gulp-if/node_modules/ternary-stream/node_modules/duplexer2/example.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browser-sync/node_modules/serve-index/public/style.css",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/color-swatch.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/copy.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/copy-blocks.styl",
+		"/Users/tomelders/Development/MS_Styleguide/build/icons.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/test.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/partials/html-top.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/settings.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/partials/html-bottom.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/header.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/typography.styl",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browserify/test/tr_order.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browser-sync/node_modules/lodash/lang/toPlainObject.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browserify/test/standalone_events.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/.bin/semver",
+		"/Users/tomelders/Development/MS_Styleguide/Readme.md",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browser-sync/node_modules/lodash/internal/initCloneObject.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/axis/test/fixtures/utilities/image-cache.css",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/axis/test/fixtures/utilities/sprite.styl",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/css-sprite/node_modules/lodash/function/spread.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/gulp.spritesmith/docs/examples/algorithm/sprite.styl",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/gulp.spritesmith/docs/examples/engine/sprite.styl",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/axis/test/fixtures/utilities/sprite.css",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/.bin/css-sprite",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/css-sprite/lib/templates/sprite.js",
+		"/Users/tomelders/Development/MS_Styleguide/ms-styleguide.sublime-project",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/css-sprite/node_modules/lwip/src/image/setpixel_worker.cpp",
+		"/Users/tomelders/Development/MS_Styleguide/build/bundle.js",
+		"/Users/tomelders/Development/MS_Styleguide/src/index.html",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browserify/test/resolve_exposed.js",
+		"/Users/tomelders/Development/MS_Styleguide/package.json",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/partials/_html-top.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/bundle.css",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/color-box.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/html/partials/_html-bottom.html",
+		"/Users/tomelders/Development/MS_Styleguide/src/test.shtml",
+		"/Users/tomelders/Development/MS_Styleguide/.jshintrc",
+		"/Users/tomelders/Development/MS_Styleguide/src/js/index.js",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/normalize.styl",
+		"/Users/tomelders/Development/MS_Styleguide/src/styles/mixins.styl",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/autoprefixer-stylus/node_modules/autoprefixer-core/ChangeLog.md",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browser-sync/lib/cli/cli-options.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/autoprefixer-stylus/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/font-unicode-range.json",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/autoprefixer-stylus/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/font-size-adjust.json",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/autoprefixer-stylus/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/font-loading.json",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/autoprefixer-stylus/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/font-feature.json",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/autoprefixer-stylus/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/fontface.json",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browser-sync/node_modules/lodash/object/forOwn.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/gulp/completion/fish",
+		"/Users/tomelders/Development/Tradeweb/USCC/src/sass/app.scss",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/gulp-stylus/node_modules/stylus/node_modules/sax/test/buffer-overrun.js",
+		"/Users/tomelders/Development/MS_Styleguide/dist/bundle.js",
+		"/Users/tomelders/Development/MS_Styleguide/node_modules/browser-sync/node_modules/browser-sync-ui/node_modules/weinre/web/client/goToLineDialog.css",
+		"/Users/tomelders/Development/MS_Styleguide/src/bundle.js",
+		"/Users/tomelders/Development/MS_Styleguide/src/index.js",
 		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magDocuments/magDocuments.styl",
 		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magDocuments/magDocuments.html",
 		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magDocuments/magDocuments.js",
@@ -692,83 +792,11 @@
 		"/Users/tomelders/Development/kpmg-magna/api/testData/markLogic/documents.json",
 		"/Users/tomelders/Development/kpmg-magna/package.json",
 		"/Users/tomelders/Development/kpmg-magna/application/modules/services/AppService.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magSquarePoint/magSquarePoint.js",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/jquery/src/data/var/data_priv.js",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/protractor/node_modules/selenium-webdriver/docs/enum_goog_uri_utils_ComponentIndex.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magStopOrderPoint/magStopOrderPoint.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magStopOrderPoint/magStopOrderPoint.js",
-		"/Users/tomelders/Development/kpmg-magna/snippets/magComponent.sublime-snippet",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magOrderPoint/magOrderPoint.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magOrderPoint/magOrderPoint.js",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/angular-ui-router/component.json",
-		"/Users/tomelders/Development/kpmg-magna/application/stylus/colours.styl",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/angular/angular.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTraderList/magTraderList.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magTraderLandscape/magTraderLandscape.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTraderList/magTraderList.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magTraderLandscape/magTraderLandscape.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magTraderLandscape/magTraderLandscape.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTraderList/magTraderList.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/services/TimelineService.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/services/Entities.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelineIndicator/magTimelineIndicator.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelineIndicator/magTimelineIndicator.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelineIndicator/magTimelineIndicator.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/app/magApp/magApp.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/app/magApp/magApp.html",
-		"/Users/tomelders/Development/kpmg-magna/api/models/Entity.model.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTraderProfile/magTraderProfile.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTraderProfile/magTraderProfile.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTraderProfile/magTraderProfile.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magTimeline/magTimeline.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magTimeline/magTimeline.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magTimeline/magTimeline.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magBehaviourDetail/magBehaviourDetail.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magBehaviourDetail/magBehaviourDetail.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magBehaviourDetail/magBehaviourDetail.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/services/EntityService.js",
-		"/Users/tomelders/Development/kpmg-magna/api/testData/markLogic/entities.id.document.trades.json",
-		"/Users/tomelders/Development/kpmg-magna/api/routes/entities.route.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magBarLine/magBarLine.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magExploreView/magExploreView.html",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/protractor/node_modules/selenium-webdriver/docs/enum_goog_testing_TestCase_Order.html",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/protractor/node_modules/selenium-webdriver/docs/enum_goog_net_XmlHttp_OptionType.html",
-		"/Users/tomelders/Development/kpmg-magna/api/generators/AlertGenerator.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magDocumentGraph/magDocumentGraph.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magDocumentGraph/magDocumentGraph.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magDocumentGraph/magDocumentGraph.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magAlerts/magAlerts.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magAlerts/magAlerts.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/views/magAlerts/magAlerts.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/services/AlertsService.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magAlertItem/magAlertItem.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magAlertItem/magAlertItem.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magAlertItem/magAlertItem.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magModelGraph/magModelGraph.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magModelGraph/magModelGraph.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magModelGraph/magModelGraph.js",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/browserify/node_modules/.bin/module-deps",
-		"/Users/tomelders/Development/kpmg-magna/gulptasks/stylus.js",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/lib/ipaddr.js",
-		"/Users/tomelders/Development/kpmg-magna/api/generators/EmailGenerator.js",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/stylus/node_modules/sax/test/entity-mega.js",
-		"/Users/tomelders/Desktop/ReleaseNotes.0.3.7.b.txt",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magPnlBar/magPnlBar.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magPopover/magPopover.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magPopover/magPopover.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magPopover/magPopover.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magPnlBar/magPnlBar.js",
-		"/Users/tomelders/Development/kpmg-magna/node_modules/browserify/test/multi_bundle_unique.js",
-		"/Users/tomelders/Desktop/ReleaseNotes.txt",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelineTest/magTimelineTest.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelineTest/magTimelineTest.html",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelineTest/magTimelineTest.js",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelinePlotter/magTimelinePlotter.styl",
-		"/Users/tomelders/Development/kpmg-magna/application/modules/components/magTimelinePlotter/magTimelinePlotter.html"
+		"/Users/tomelders/Development/kpmg-magna/application/modules/d3Nodes/magSquarePoint/magSquarePoint.js"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -784,6 +812,69 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"</span>",
+			"<span>",
+			"WColour",
+			"<li><span>",
+			"pag",
+			"span",
+			"icon-example",
+			"<div class=\"icon",
+			"<li>",
+			"col",
+			"text-block",
+			"<h4>",
+			"master-card",
+			"master",
+			"ms-change-card",
+			"charge",
+			"--",
+			"ms-budget-card",
+			"united-kingdom",
+			"new-badge",
+			"expanidicuff",
+			"adjustable-wait",
+			"adjus",
+			"problem-sol",
+			"freeze",
+			"open-ne",
+			"tag-sale-offer",
+			"disposal-recycling",
+			"make-it-a-gift",
+			"<icon-swatch>",
+			"bag",
+			"<icon-swatch>",
+			"m-and-s",
+			".icon",
+			".ico",
+			"<icon-title",
+			"h2",
+			"sprite(",
+			"store-locator",
+			"content-row",
+			"color-box",
+			"<div class=\"grid-block eighths\"></di",
+			"class=\"grid-block quarters\"></div>",
+			"thirds\">",
+			"halves",
+			"THE QUICK BROWN FOX",
+			"</div>",
+			"row\"",
+			"div class=\"content-wrapper",
+			"max",
+			"color-box-row",
+			"’",
+			"h2",
+			"colorHash",
+			"before",
+			"-ms",
+			"=",
+			"dark",
+			":",
+			"Fonts/",
+			"name",
+			"title",
+			"broswserSync",
 			"2015",
 			"content",
 			"magDocTabular",
@@ -848,70 +939,7 @@
 			"initFakeData",
 			"basis",
 			"_renderNodes",
-			"spline",
-			"setCurrentDateInViewportBounds",
-			"setCurrentDate",
-			"getC",
-			"setCurrentDate",
-			"unreadFilter",
-			"grouped",
-			"$state",
-			"stateName",
-			"startName",
-			"simple-bar",
-			"shortfallScale",
-			"participationScale",
-			"addPreviousValuesToEntities",
-			"landscapeCtrl.keys",
-			"getCurrentDateInRange",
-			"pointer",
-			"TimelineSer",
-			"setCurrentDate",
-			"boundEnd",
-			"boudEnd",
-			"boundStart",
-			"view",
-			"Kickoff",
-			"getMe",
-			"margins",
-			"nodeAlpha",
-			"currentTime",
-			"canvas",
-			"paddingPercent",
-			"padding",
-			"_createAxis",
-			"handleViewBoundsChanged",
-			"TimelineService",
-			"0.055",
-			"getMedianViewDate",
-			"canvasWidth",
-			"_getThumbMidpoint",
-			"2014",
-			"timeline-models",
-			"magModelGraph",
-			"_updateBounds",
-			"positionLine",
-			"getThumbMidpoint",
-			"scaleX",
-			"line",
-			"document",
-			"yAxisWidth",
-			"scaleX",
-			"return",
-			"window",
-			"updateScaleRanges",
-			"xAxisGroup",
-			"_setXAxisGroup",
-			"graphWidth",
-			"magModelGraph",
-			"viewXScale",
-			"xAxis",
-			"_renderAxes",
-			"_configureAxes",
-			"_configureScales",
-			"_configureScalesAndAxes",
-			"xMinorAxis",
-			"xAxis"
+			"spline"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -919,6 +947,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Fonts/",
 			"UserService.config.entityLandscape.yAxisKey",
 			"UserService.config.entityLandscape.xAxisKey",
 			"UserService.config.entityLandscape.yAxisKey",
@@ -936,44 +965,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								722,
-								722
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -1022,16 +1021,108 @@
 		"selected_items":
 		[
 			[
-				"ind",
-				"~/Development/MS_Styleguide/src/styles/index.styl"
+				"colo",
+				"src/styles/colors.styl"
+			],
+			[
+				"glob",
+				"src/styles/global.styl"
+			],
+			[
+				"global.st",
+				"src/styles/global.styl"
 			],
 			[
 				"gulp",
-				"~/Development/MS_Styleguide/gulpfile.js"
+				"gulpfile.js"
+			],
+			[
+				"index",
+				"src/styles/index.styl"
+			],
+			[
+				"icon",
+				"src/html/icons.html"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"inde.st",
+				"src/styles/index.styl"
+			],
+			[
+				"globa",
+				"src/styles/global.styl"
+			],
+			[
+				"icons",
+				"src/styles/icons.styl"
+			],
+			[
+				"html-",
+				"src/html/partials/html-top.html"
+			],
+			[
+				"inde",
+				"src/html/index.html"
+			],
+			[
+				"sett",
+				"src/styles/settings.styl"
+			],
+			[
+				"swat",
+				"src/styles/color-swatch.styl"
+			],
+			[
+				"color",
+				"src/styles/colors.styl"
+			],
+			[
+				"bundl",
+				"build/bundle.css"
+			],
+			[
+				"read",
+				"Readme.md"
 			],
 			[
 				"pac",
-				"~/Development/MS_Styleguide/package.json"
+				"package.json"
+			],
+			[
+				"ty",
+				"src/styles/typography.styl"
+			],
+			[
+				"glo",
+				"src/styles/global.styl"
+			],
+			[
+				"in",
+				"src/index.html"
+			],
+			[
+				"global",
+				"src/styles/global.styl"
+			],
+			[
+				"color-bo",
+				"src/styles/color-box.styl"
+			],
+			[
+				"typ",
+				"src/styles/typography.styl"
+			],
+			[
+				"box",
+				"src/styles/color-box.styl"
+			],
+			[
+				"ind",
+				"~/Development/MS_Styleguide/src/styles/index.styl"
 			],
 			[
 				"bu",
@@ -1162,20 +1253,8 @@
 				"application/modules/services/DocumentService.js"
 			],
 			[
-				"inde",
-				"api/index.js"
-			],
-			[
-				"typ",
-				"application/stylus/typeography.styl"
-			],
-			[
 				"fon",
 				"node_modules/angular/node_modules/jsdom/node_modules/cssstyle/lib/properties/font.js"
-			],
-			[
-				"colo",
-				"application/stylus/colours.styl"
 			],
 			[
 				"orderp",

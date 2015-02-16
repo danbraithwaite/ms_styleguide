@@ -1,14 +1,79 @@
 
 $alert
 	display block
+	cf()
+	position relative
 	border 1px solid green
 	background-color successGreen
 	text-align left
-
-success-banner
-	@extends $alert
-	padding 3px 20px 3px 60px
+	padding 20px 20px 15px
+	
+	main#alerts-page &
+		margin 60px 0
+		
 	> *
 		font-family 'Helvetica' 'Arial'
 		color darkGrey
+	> p
+		margin 0
 	
+	> ul
+		margin 0
+		padding 0 0 0 40px
+		font-size 15px
+		
+	
+	
+$alert-icon
+	@extends $alert
+	padding 20px 20px 15px 60px
+	
+//----------------------------------------------------------
+	
+success-banner
+	@extend $alert
+			
+success-banner-icon
+	@extends $alert-icon
+	
+	&:before
+		@extend .icon
+		sprite($alert-confirmation)
+		position absolute
+		display block
+		content ''
+		top 16px
+		left 20px
+
+//----------------------------------------------------------
+	
+warning-banner-icon
+	@extend $alert-icon
+	border-color warningYellow
+	background-color warningYellowBg
+	
+	&:before
+		@extend .icon
+		sprite($attention-yellow)
+		position absolute
+		display block
+		content ''
+		top 16px
+		left 20px
+
+//----------------------------------------------------------	
+		
+error-banner-icon
+	@extend $alert-icon
+	border-color errorRed
+	background-color errorPink
+	
+	&:before
+		@extend .icon
+		sprite($error-red)
+		position absolute
+		display block
+		content ''
+		top 16px
+		left 20px
+		

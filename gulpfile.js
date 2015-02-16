@@ -124,8 +124,7 @@ Icons
 gulp.task('icons', function () {
 	return gulp.src('./src/icons/*.png')
 		.pipe(sprite({
-			cssPath: '/images',
-			out: './src/images',
+			base64: true,
 			format: 'png',
 			style: 'icons.styl',
 			processor: 'stylus',

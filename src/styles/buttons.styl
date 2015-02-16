@@ -1,0 +1,110 @@
+button($color)
+	border none
+	color darkGrey
+	margin 0
+	padding 0 20px
+	background-color $color
+	line-height 40px
+	
+	&:focus
+		outline none
+		box-shadow 0 0 2px rgba(0,0,0,0.5)
+	
+	&.hover-state
+	&:hover
+		background-color primaryCtaHoverColor
+		
+	&.active-state
+	&:active
+		background-color primaryCtaPressColor
+		
+	&:disabled
+		background-color backgroundGrey
+		color mediumGrey
+		cursor no-drop
+		
+	&[data-role=secondary]
+		background-color secondaryCtaBgColor
+		
+		&.hover-state
+		&:hover
+			background-color lightGrey
+			
+		&.active-state
+		&:active
+			background-color mediumGrey
+			
+		&:disabled
+			color lightGrey
+			background-color backgroundGrey
+			cursor no-drop
+		
+	&[data-role=tertiary]
+		background-color white
+		border 1px solid darkGrey
+		
+		&.hover-state
+		&:hover
+			background-color secondaryCtaBgColor
+			
+		&.active-state
+		&:active
+			background-color lightGrey
+			border-color transparent
+			
+		&:disabled
+			color lightGrey
+			background-color backgroundGrey
+			cursor no-drop
+			
+			
+
+main 
+	center(pad: 10px)
+
+main#buttons section
+	col(1/2, cycle: 2)
+	margin-bottom 4%
+	background white
+	border 1px solid lightGrey
+	border-radius 4px
+	padding 0
+	
+	+below(medium)
+		stack()
+		margin-bottom 10px
+	
+	header
+		margin 0
+		center 100%
+		border-bottom 1px solid lightGrey
+		> * 
+			margin 10px 0
+			
+	ul
+		col(1/2 1/3)
+		
+
+attribute-list
+	margin 0 2%
+	
+
+button-example
+	margin 40px 2% 20px 
+	
+	button-title
+		col(1/3)
+		@extend p
+		@extend strong
+		line-height 40px
+		text-align left
+		
+		
+	button-container
+		col(2/3)
+		text-align left
+		
+		
+
+button 
+	button(green)

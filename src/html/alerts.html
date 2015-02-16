@@ -1,89 +1,106 @@
 @@include('./partials/html-top.html')
 
-	<section>
-		<header>
-			<h2 class="london">Alerts</h2>
-			<p>Feedback for users for success messages, alerts/information and errors. Alerts can be either with an icon or without. You can also use medium font weight for the important part of the message to help make an impact. All copy is 15px Medium/Regular. Try to keep it to one line...</p>
-			<h4>Success</h4>
-			<p>Example use case: “More in your bag than you expected? We saved the items you added to your bag on your last visit.”</p>
+	<main id="alerts-page">
+		
+		<section>
+			<header>
+				<h2 class="london">Alerts</h2>
+				<p>Feedback for users for success messages, alerts/information and errors. Alerts can be either with an icon or without. You can also use medium font weight for the important part of the message to help make an impact. All copy is 15px Medium/Regular. Try to keep it to one line...</p>
+				<h4>Success</h4>
+				<p>Example use case: “More in your bag than you expected? We saved the items you added to your bag on your last visit.”</p>
 
-		</header>
+			</header>
 
-		<article>
-			<success-banner>
-				<p><strong>Congratulations!</strong> This is what a success message looks like with one line of copy and an icon.</p>
-			</success-banner>
+			<article>
+				<success-banner-icon>
+					<p><strong>Congratulations!</strong> This is what a success message looks like with one line of copy and an icon.</p>
+				</success-banner-icon>
+
+				<attribute-list>
+					<ul>
+						<li>Font weight: medium</li>
+						<li>Font size: 15px</li>
+						<li>WColour: #333333</li>
+					</ul>
+
+					<ul>
+						<li>Icon colour: #bdd755</li>
+						<li>border: #bdd755</li>
+						<li>Box fill/bg: #f5f9e5</li>
+					</ul>
+					
+				</attribute-list>
+
+				<success-banner>
+					<p><strong>Congratulations!</strong> This is what a success message looks like with one line of copy and no icon.</p>
+				</success-banner>
+
+				<success-banner-icon>
+					<p><strong>Congratulations!</strong> This is what a success message looks like with two lines of copy and an icon:</p>
+					<ul>
+						<li>We’ve gone ahead and applied a discount to your order!</li>
+					</ul>
+				</success-banner-icon>	
+				
+			</article>
+		</section>
+
+		<section>
+			<header>
+				<h4>Important info</h4>
+				<p>Example use case: “Please note that all of our Christmas delivery order deadlines have now passed so we are no longer able to offer delivery before Christmas.”</p>
+			</header>
+			<article>
+				
+				<warning-banner-icon>
+					<p><strong>Something important is happening</strong> and we want to make sure you are in the loop.</p>
+				</warning-banner-icon>
+
+			</article>
 
 			<attribute-list>
 				<ul>
-					<li><span>Font weight:</span> medium Icon colour: #bdd755</li>
-					<li><span>Font size:</span> 15px Box border: #bdd755</li>
-					<li><span>WColour:</span> #333333 Box fill/bg: #f5f9e5</li>
+					<li>Font weight: medium</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
 				</ul>
 				<ul>
-					<li><span>Font weight:</span> medium Icon colour: #bdd755</li>
-					<li><span>Font size:</span> 15px Box border: #bdd755</li>
-					<li><span>WColour:</span> #333333 Box fill/bg: #f5f9e5</li>
-				</ul>
-				<ul>
-					<li><span>Font weight:</span> medium Icon colour: #bdd755</li>
-					<li><span>Font size:</span> 15px Box border: #bdd755</li>
-					<li><span>WColour:</span> #333333 Box fill/bg: #f5f9e5</li>
+					<li>Icon colour: #ffcd00</li>
+					<li>border: #ffcd00</li>
+					<li>Box fill/bg: #ffffca</li>
 				</ul>
 			</attribute-list>
-			
-		</article>
-	</section>
+		</section>
+		
+		
+		<section>
+			<header>
+				<h4>Error alert</h4>
+				<p>Example use case: “We’re sorry - Striped Rope Tie Dress with StayNEW™ has been removed from your shopping bag”</p>
+			</header>
+			<article>
+
+				<error-banner-icon>
+					<p><strong>We’re sorry</strong> but we’ve completely run out of stock since you added this to your bag.</p>
+				</error-banner-icon>
+
+				<attribute-list>
+					<ul>
+						<li>Font weight: medium</li>
+						<li>Font size: 15px</li>
+						<li>Colour: #333333</li>
+					</ul>
+					<ul>
+						<li>Icon colour: #ea122a</li>
+						<li>Box border: #ea122a</li>
+						<li>Box fill/bg: #fff3f4</li>
+					</ul>
+				</attribute-list>
+
+			</article>
+		</section>
+	</main>
+
 	
-<!-- 	<section>
-		<header>
-		</header>
-
-		<div>
-			
-
-			<ul>
-			<li>Font weight: medium Icon colour: #bdd755</li>
-			<li>Font size: 15px Box border: #bdd755</li>
-			<li>Colour: #333333 Box fill/bg: #f5f9e5</li>
-			</ul>
-
-
-			<p>Congratulations! This is what a success message looks like with one line of copy and no icon.</p>
-
-			<p>Congratulations! This is what a success message looks like with two lines of copy and an icon:</p>
-
-			<ul>
-			<li>We’ve gone ahead and applied a discount to your order!</li>
-			</ul>
-
-
-			<h4>Important info</h4>
-
-			<p>Example use case: “Please note that all of our Christmas delivery order deadlines have now passed so we are no longer able to offer delivery before Christmas.”</p>
-
-			<p>Something important is happening and we want to make sure you are in the loop.</p>
-
-			<ul>
-			<li>Font weight: medium Icon colour: #ffcd00</li>
-			<li>Font size: 15px Box border: #ffcd00</li>
-			<li>Colour: #333333 Box fill/bg: #ffffca</li>
-			</ul>
-
-
-			<h4>Error alert</h4>
-
-			<p>Example use case: “We’re sorry - Striped Rope Tie Dress with StayNEW™ has been removed from your shopping bag”</p>
-
-			<p>We’re sorry but we’ve completely run out of stock since you added this to your bag.</p>
-
-			<ul>
-			<li>Font weight: medium Icon colour: #ea122a</li>
-			<li>Font size: 15px Box border: #ea122a</li>
-			<li>Colour: #333333 Box fill/bg: #fff3f4</li>
-			</ul>
-		</div>
-	
-	</section> -->
 
 @@include('./partials/html-bottom.html')
