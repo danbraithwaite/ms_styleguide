@@ -40,29 +40,79 @@
 				<p>In this example, we have a promo for the M&amp;S cooking app. As the promo needs to have links to download the app, a heading, body copy and image of the app, it needs to be fairly large.</p>
 			</header>
 
-			<promo-hero>
+<!-- 			<promo-hero-right>
 				<div>
 					<promo-copy>
 						<promo-heading>Free app full of delicious recipes</promo-heading>
-						<promo-text>
-							Try our Cook With M&amp;S recipe app. It's packed with inspiration and clever features, such as built-in timers and personalised shopping lists. It's your helping hand in the kitchen.
-							
+						<promo-text>Try our Cook With M&amp;S recipe app. It's packed with inspiration and clever features, such as built-in timers and personalised shopping lists. It's your helping hand in the kitchen.</promo-text>
+						<promo-cta>
 							<ul>
 								<li><a data-role="app-store-link" href="#">Available on the Apple App Store</a></li>
 								<li><a data-role="google-play-link" href="#">Available on the Google Play Store</a></li>
 							</ul>
+						</promo-cta>
+					</promo-copy>
+				</div>
+			</promo-hero-right>
+
+			<promo-hero-left>
+				<div>
+					<promo-copy>
+						<promo-heading>Your Style Advisor</promo-heading>
+						<promo-text>
+							From colours that best suit your complexion to how to dress for your body shape, our expert team can offer personalised style advice, tailored especially to you
+							<a href="#">Get Started</a>
 						</promo-text>
 					</promo-copy>
 				</div>
-			</promo-hero>
+			</promo-hero-left>
+ -->
+
+			<!--
+				IMPPORTANT NOTE:
+				The required responsoive behaviour would require a level of progressive source ordering
+				that isn't practical. It's possible, but that's how you get legacy code that no one wants
+				to touch ever again. So we'll double up on the promo text and hide/show accordingly. It's
+				bulky, but it's simple.
+			-->
+
+			<hero-promo-right>
+				<promo-image-placeholder></promo-image-placeholder>
+				<promo-copy>
+					<h1>Free app full of delicious recipes</h1>
+					<p>Try our Cook With M&amp;S recipe app. It's packed with inspiration and clever features, such as built-in timers and personalised shopping lists. It's your helping hand in the kitchen.</p>
+					<promo-cta>
+						<ul>
+							<li><a data-role="app-store-link" href="#">Available on the Apple App Store</a></li>
+							<li><a data-role="google-play-link" href="#">Available on the Google Play Store</a></li>
+						</ul>
+					</promo-cta>
+				</promo-copy>
+				<promo-copy>
+					<h1>Free app full of delicious recipes</h1>
+					<p>Try our Cook With M&amp;S recipe app. It's packed with inspiration and clever features, such as built-in timers and personalised shopping lists. It's your helping hand in the kitchen.</p>
+					<promo-cta>
+						<ul>
+							<li><a data-role="app-store-link" href="#">Available on the Apple App Store</a></li>
+							<li><a data-role="google-play-link" href="#">Available on the Google Play Store</a></li>
+						</ul>
+					</promo-cta>
+				</promo-copy>
+			</hero-promo-right>
+
+			<hero-promo-left>
+				<promo-image-placeholder></promo-image-placeholder>
+				<promo-copy>
+					<h1>Your Style Advisor</h1>
+					<p>From colours that best suit your complexion to how to dress for your body shape, our expert team can offer personalised style advice, tailored especially to you</p>
+					<promo-cta><a href="#">Get Started</a></promo-cta>
+				</promo-copy>
+			</hero-promo-right>
+
+
+
 
 		</section>
-
-
-
-
-
-		<p>TEXT SAFE AREA - 50% width</p>
 
 	</main>
 

@@ -8,48 +8,121 @@ promo-banner
 	> p
 		color red
 		font-size 18px
-		
-promo-hero
-	display block
+
+// ---------------------------------------------------------
+
+$hero-promo
 	center()
-	background #000
-	padding-bottom 35.15%
+	text-align left
 	background-size cover
-	background-image url(/images/promo-1.jpg)
 	position relative
+	margin-top 5%
+	margin-bottom 65%
 	
-	> div
+	promo-image-placeholder
+		display block
 		position absolute
 		top 0
-		right 0
-		bottom 0
 		left 0
+		right 0
+		padding-bottom 35.15%
+		height 35.15%
+		background-size cover
+		
+	promo-copy
+		h1
+			text-transform none
+			color #fff
+
+		p 
+			color #fff	
+			
+		promo-cta
+			display block
+			ul 
+				inline-list true
+				li 
+					margin-right 10px
+					margin-bottom 10px
+
+		&:nth-child(odd)
+			position absolute
+			top 0
+			bottom 0
+			width 40%
+
+			h1
+				text-transform none
+				color #fff
+				
+				+below(1130px)
+					font-size 40px
+					line-height 40px
+					
+				+below(910px)
+					margin-top 20%
+					
+				+below(750px)
+					display none
+			p 
+				color #fff
+				+below(910px)
+					display none
+					
+			promo-cta
+				+below(750px)
+					margin-top 40%
+					
+				+below(682px)
+					display none
+					
+		&:nth-child(even)
+			position absolute
+			width 100%
+			left 0
+			top 0
+			padding-top 35.15%
+			
+			h1, p,  promo-cta
+				display none
+				color darkgrey
+				
+			+below(910px)
+				p
+					display block
+					border-bottom 1px solid mediumgrey
+					padding-bottom 10px
+					
+			+below(750px)
+				h1
+					display block
+					margin 2% 0
+					font-size 40px
+					
+			+below(682px)
+				promo-cta
+					display block
+					border-bottom 1px solid mediumgrey
+				
+				h1
+					font-size 28px
+					line-height 28px
+					
+					
+// ---------------------------------------------------------
+
+hero-promo-right
+	@extend $hero-promo
+	promo-image-placeholder
+		background-image url(/images/promo-1.jpg)
 	
 	promo-copy
-		col(1/2)
-		shift(1/2)
-		color white
-		text-align left
-		margin-top 5%
+		left 55%
+	
+hero-promo-left
+	@extend $hero-promo
+	promo-image-placeholder
+		background-image url(/images/promo-2.jpg)
 		
-		promo-heading
-			@extend h1
-			padding 0 10% 0 5%
-			display block
-			margin 0 0 5% 0
-			text-transform none
-
-		promo-text
-			@extend p
-			padding 0 20% 0 5%
-			display block
-			margin 0
-			color white
-			
-		ul 
-			inline-list true
-			margin-top 10px
-			li 
-				margin-right 10px
-	
-	
+	promo-copy
+		left 5%
