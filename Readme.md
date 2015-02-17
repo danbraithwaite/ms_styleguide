@@ -21,7 +21,7 @@ This project uses [Jeet](http://www.jeet.gs) for the responsive grid.
 
 The HTML files are split into partials and the output HTML is generated with the `gulp html` task. 
 
-I've adopted a couple of conventions that may or may n ot be familiar. 
+I've adopted a couple of conventions that may or may not be familiar to you. 
 
 #### HTML5 Custom Tags
 For better semantics and readability, this project makes liberal use of [HTML5's Custom tags](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/) rather than pollute the code with divs and classes. One example of that would be
