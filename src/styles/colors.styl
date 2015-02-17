@@ -1,11 +1,15 @@
 
-darkGrey = #333333
-mediumGrey = #999999
-lightGrey = #cccccc
-backgroundGrey = #f8f8f8 
 
 green = #bdd755
 red = #c4201d
+
+// BUG!!
+// darkGrey and mediumGrey appear to be getting swapped somehow
+// It could be in the CSS, but I suspect a stylus bug
+darkgrey = #333
+mediumgrey = #999999
+lightgrey = #cccccc
+backgroundgrey = #f8f8f8 
 
 successGreen = #f5f9e5
 errorRed = #ea122a
@@ -19,10 +23,10 @@ secondaryCtaBgColor = #eeeeee
 // If ever you need to iterate over colors, this should help
 colorHash = {}
 colorHash['black'] = black	
-colorHash['dark-grey'] = darkGrey		
-colorHash['medium-grey'] = mediumGrey	
-colorHash['light-grey'] = lightGrey	
-colorHash['background-grey'] = backgroundGrey			
+colorHash['dark-grey'] = darkgrey		
+colorHash['medium-grey'] = mediumgrey	
+colorHash['light-grey'] = lightgrey	
+colorHash['background-grey'] = backgroundgrey			
 colorHash['green'] = green		
 colorHash['red'] = red		
 colorHash['success-green'] = successGreen

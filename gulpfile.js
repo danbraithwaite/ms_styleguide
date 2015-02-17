@@ -79,8 +79,7 @@ gulp.task('styles', function(){
 				axis(),
 				rupture(),
 				jeet()
-			],
-		compress: true
+			]
 	}))
 	.pipe(rename('bundle.css'))
 	.pipe(gulp.dest('./build'))
