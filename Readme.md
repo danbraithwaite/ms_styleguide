@@ -39,7 +39,13 @@ For better semantics and readability, this project makes liberal use of [HTML5's
 	</color-swatch-group>
 
 #### Sparse use of classes
-Where possible, this project tries to avoid classes and favours semantic markup. So you won't see any classes relating to the grid system for example. In addition, it is preferable to use the `data-role` attibute convention (which is just a custom attribute) when specifying the role of an element that is ancillary to it's parent tag. 
+Where possible, this project tries to avoid classes and favours semantic markup. So you won't see any classes relating to the grid system for example. In addition, it is preferable to use the `data-role` attibute convention (which is just a custom attribute) when specifying the role of an element that is ancillary to it's tag name. 
+
+However, only use this where it makes sense. You'll notice that the `color-swatch` example above uses a class to specify a color. There it makes sense. Buttons are an use case where `data-role` makes sense. 
+
+	<button data-role="seondary">This is a button</button>
+	
+It's a judgement call. 
 
 ###Icons
 
