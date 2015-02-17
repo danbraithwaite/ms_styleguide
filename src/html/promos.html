@@ -1,0 +1,69 @@
+@@include('./partials/html-top.html')
+
+	<main id="promos-page">
+		
+		<section>
+			<header>
+				<h3>Promos</h3>
+				<p>Promotional messages are occasionaly used on the site, whether it’s to let the user know that there’s a sale on a certain furniture range, cheaper shipping or a big promo/ad for an M&amp;S app (see food promo below). In most cases, you shouldn’t be using a lot of promo blocks on the same page. They work a little differently to alert messages, thus different rules apply.</p>
+			</header>		
+		</section>
+
+		<section>
+			<header>
+				<h4>Small text promo</h4>
+				<p>In this example, we have a promo for an offer/sale of a product. So, we use the M&amp;S promo/offer red colour. As this is a small promo, it’s purpose is purely to inform - but it should not be shouty or overpowering.</p>
+			</header>
+			
+			
+			<promo-banner>
+				<p>Save 20% when you buy 2 or more pieces of selected furniture</p>
+			</promo-banner>
+			
+			<attribute-list>
+				<ul>
+					<li>Font weight: light</li>
+					<li>Font size: 18px</li>
+					<li>Colour: #c4201d</li>
+				</ul>
+				<ul>
+					<li>Box border: #c4201d</li>
+					<li>Box fill/bg: #ffffff</li>
+				</ul>
+			</attribute-list>
+
+		</section>
+
+		<section>
+			<header>
+				<h3>Large full width promo</h3>
+				<p>In this example, we have a promo for the M&amp;S cooking app. As the promo needs to have links to download the app, a heading, body copy and image of the app, it needs to be fairly large.</p>
+			</header>
+
+			<promo-hero>
+				<div>
+					<promo-copy>
+						<promo-heading>Free app full of delicious recipes</promo-heading>
+						<promo-text>
+							Try our Cook With M&amp;S recipe app. It's packed with inspiration and clever features, such as built-in timers and personalised shopping lists. It's your helping hand in the kitchen.
+							
+							<ul>
+								<li><a data-role="app-store-link" href="#">Available on the Apple App Store</a></li>
+								<li><a data-role="google-play-link" href="#">Available on the Google Play Store</a></li>
+							</ul>
+						</promo-text>
+					</promo-copy>
+				</div>
+			</promo-hero>
+
+		</section>
+
+
+
+
+
+		<p>TEXT SAFE AREA - 50% width</p>
+
+	</main>
+
+@@include('./partials/html-bottom.html')

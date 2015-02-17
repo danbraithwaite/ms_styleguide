@@ -155,4 +155,19 @@ tab-button-group
 		
 		> input
 			display none
+			
+$link-button
+	font-size 0
+	@extend .icon
+	display inline-block
+	text-decoration none
+	border none
+	
+a[data-role=app-store-link]
+	@extend $link-button
+	sprite($apple-app-store)
+	
+a[data-role=google-play-link]
+	@extend $link-button
+	sprite($google-play)
 	
