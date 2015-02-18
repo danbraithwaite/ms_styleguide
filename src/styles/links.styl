@@ -1,0 +1,69 @@
+// -----------------------------------------------------
+// Page Setup
+// -----------------------------------------------------
+			
+element-example-layout()
+
+element-example 
+	a 
+		margin-top 11px
+		display inline-block
+		
+	p
+		margin 0
+
+// -----------------------------------------------------
+// Link stuff
+// -----------------------------------------------------
+
+
+a.icon-link
+	$icon-offset = 30px
+	position relative
+	margin-left $icon-offset
+	
+	&:before
+		@extend .icon
+		position absolute
+		display block
+		content ''
+		left $icon-offset * -1
+
+	&.delivery:before
+		sprite($delivery-small)	
+
+a.promo-link
+	position relative
+	font-size 18px
+	padding-bottom 1px
+	
+	&:after
+		display block
+		content ''
+		position absolute
+		right -17px
+		top 2px
+		
+		@extend .icon
+		sprite($arrow-right-small)
+
+		
+link-list 
+	a 
+		$spacing = 15px
+		margin-right $spacing * 2
+		display inline-block
+		position relative
+		&:after
+			
+			display block
+			content ''
+			position absolute
+			top 0
+			right -1 * $spacing
+			bottom 3px
+			border-right 1px solid lightgrey
+			
+		&:last-child:after
+			border none
+	
