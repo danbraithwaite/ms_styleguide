@@ -134,7 +134,164 @@
 			</attribute-list>
 		</section>
 
-	<section>
+
+		<section>
+			<header>
+				<h4>Checkbox</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<checkbox-group>
+						<label><input type="checkbox"> <span>Checkbox one</span></label>
+						<label><input type="checkbox"> <span>Checkbox two</span></label>
+						<label><input type="checkbox"> <span>Checkbox three</span></label>
+					</checkbox-group>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Checkbox Colour: #f8f8f8</li>
+					<li>Checkbox Border: 1px #cccccc</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Active state</example-title>
+				<example-container>
+					<checkbox-group>
+						<label><input type="checkbox" checked> <span>Checkbox one</span></label>
+						<label><input type="checkbox" checked> <span>Checkbox two</span></label>
+						<label><input type="checkbox" checked> <span>Checkbox three</span></label>
+					</checkbox-group>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Checkbox Colour: #ffffff</li>
+				</ul>
+				<ul>
+					<li>Checkbox Border: 1px #333333</li>
+					<li>Tick Icon colour: #ffffff</li>
+				</ul>
+			</attribute-list>
+	
+
+			<element-example>
+				<example-title>Disabled state</example-title>
+				<example-container>
+					<checkbox-group>
+						<label><input type="checkbox" checked disabled> <span>Checkbox one</span></label>
+						<label><input type="checkbox" disabled> <span>Checkbox two</span></label>
+						<label><input type="checkbox"> <span>Checkbox three</span></label>
+					</checkbox-group>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Disabled Text Colour: #cccccc</li>
+					<li>Checkbox Colour: #ffffff</li>
+					<li>Checkbox Border: 1px #333333</li>
+				</ul>
+			</attribute-list>
+		</section>
+
+		<section>
+			<header>
+				<h4>Radio Button</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<checkbox-group>
+						<label><input name="rg1" type="radio"> <span>Radio option 1</span></label>
+						<label><input name="rg1" type="radio"> <span>Radio option 2</span></label>
+						<label><input name="rg1" type="radio"> <span>Radio option 3</span></label>
+					</checkbox-group>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Radio Colour: #f8f8f8</li>
+					<li>Radio Border: 1px #cccccc</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Active state</example-title>
+				<example-container>
+					<checkbox-group>
+						<label><input name="rg2" type="radio" checked> <span>Radio option 1</span></label>
+						<label><input name="rg2" type="radio" checked> <span>Radio option 2</span></label>
+						<label><input name="rg2" type="radio" checked> <span>Radio option 3</span></label>
+					</checkbox-group>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Radio Colour: #ffffff</li>
+				</ul>
+				<ul>
+					<li>Radio Border: 1px #333333</li>
+					<li>Tick Icon colour: #ffffff</li>
+				</ul>
+			</attribute-list>
+	
+
+			<element-example>
+				<example-title>Disabled state</example-title>
+				<example-container>
+					<checkbox-group>
+						<label><input name="rg3" type="radio" disabled> <span>Radio option 1</span></label>
+						<label><input name="rg3" type="radio" disabled> <span>Radio option 2</span></label>
+						<label><input name="rg3" type="radio"> <span>Radio option 3</span></label>
+					</checkbox-group>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Disabled Text Colour: #cccccc</li>
+					<li>Radio Colour: #ffffff</li>
+					<li>Radio Border: 1px #333333</li>
+				</ul>
+			</attribute-list>
+		</section>
+
+		<section>
 			<header>
 				<h4>Dropdown</h4>
 			</header>
@@ -170,110 +327,51 @@
 			</attribute-list>
 		</section>
 
+		<section>
+			<header>
+				<h4>Dropdown</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<range-selector>
+						<select>
+							<option value="0" selected>0</option>
+							<option value="100">100</option>
+							<option value="200">200</option>
+							<option value="300">300</option>
+						</select>
+						To
+						<select>
+							<option value="0">0</option>
+							<option value="100">100</option>
+							<option value="200">200</option>
+							<option value="300" selected>300</option>
+						</select>
+					</range-selector>
+				</example-container>
+			</element-example>
+	
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Field Colour: #f8f8f8</li>
+					<li>Field Border: 1px #cccccc</li>
+				</ul>
+				<ul>
+					<li>Divider colour: #333333</li>
+					<li>Arrow colour: #333333</li>
+				</ul>
+			</attribute-list>
+		</section>
 
-
-<h3>Dropdown</h3>
-
-<example-title>Inactive state</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Field Colour: #f8f8f8</li>
-<li>Field Border: 1px #cccccc</li>
-</ul>
-
-
-<example-title>Active State</example-title>
-
-<p>use default system dropdown menus</p>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Field Colour: #ffffff</li>
-<li>Field Border: 1px #333333</li>
-</ul>
-
-
-<h3>Checkbox</h3>
-
-<example-title>Inactive state</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Checkbox Colour: #f8f8f8</li>
-<li>Checkbox Border: 1px #cccccc</li>
-</ul>
-
-
-<example-title>Active State</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Checkbox Colour: #ffffff</li>
-<li>Checkbox Border: 1px #333333</li>
-<li>Tick Icon colour: #ffffff</li>
-</ul>
-
-
-<h4>Disabled State</h4>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Disabled Text Colour: #cccccc</li>
-<li>Checkbox Colour: #ffffff</li>
-<li>Checkbox Border: 1px #333333</li>
-</ul>
-
-
-<h3>Radio Button</h3>
-
-<example-title>Inactive state</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Radio Colour: #f8f8f8</li>
-<li>Radio Border: 1px #cccccc</li>
-</ul>
-
-
-<example-title>Active State</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Radio Colour: #bdd755</li>
-<li>Checkbox Border: 1px #cccccc</li>
-</ul>
-
-
-<h4>Disabled State</h4>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Disabled Text Colour: #cccccc</li>
-<li>Radio Colour: #f8f8f8</li>
-<li>Radio Border: 1px #cccccc</li>
-</ul>
-
-
-<h3>Range Selector</h3>
-
-<p>QUESTION - This is just two dropdowns</p>
+	</main>
 
 <h4>Accordian</h4>
 
@@ -339,9 +437,5 @@
 <li>Error font size: 13px</li>
 <li>Error font colour: #ea122a</li>
 </ul>
-
-
-
-	</main>
 
 @@include('./partials/html-bottom.html')

@@ -12,8 +12,10 @@ element-example-layout()
 input[type=text]
 input[type=email]
 input[type=password]
+input[type=checkbox]
 textarea
 select
+	border-radius 0
 	border 1px solid lightgrey
 	background-color backgroundgrey
 	line-height 36px
@@ -24,36 +26,28 @@ select
 	
 	&:focus
 	&.forced-focus
-		border 1px solid black
+		border 1px solid darkgrey
 		outline none
-		
-textarea
-	min-height 114px
 
 
-select
-	// In  prod you'll need a more robust styled select
-	appearance none
-	border-radius 0
-	background-repeat no-repeat
-	background-position 95% center
-	background-image url('/images/arrow-select.png')
-	
-	+retina()
-		background-image url('/images/arrow-select@2x.png')
-		background-size 12px
-	
-	
 input-error
 	display none
+
 	
 // Inputs should be wrapped in a label tag
+
+label
+	user-select none
+
 label.error
 	position relative
 	
 	input[type=text]
 	input[type=email]
 	input[type=password]
+	input[type=checkbox]
+	textarea
+	select
 		border 1px solid errorRed
 		background-color errorPink
 		color errorRed
@@ -93,3 +87,111 @@ label.error
 			border-top-color #f50000
 			border-width 5px
 			margin-left -5px
+			
+// ----------------------------------------------------------------------		
+// Text area
+// ----------------------------------------------------------------------
+		
+textarea
+	min-height 114px
+
+// ----------------------------------------------------------------------		
+// Select
+// ----------------------------------------------------------------------
+
+select
+	// In  prod you'll need a more robust styled select
+	appearance none
+	border-radius 0
+	background-repeat no-repeat
+	background-position right 10px center
+	background-image url('/images/arrow-select.png')
+	
+	+retina()
+		background-image url('/images/arrow-select@2x.png')
+		background-size 12px
+
+// ----------------------------------------------------------------------		
+// Checkboxes
+// ----------------------------------------------------------------------
+
+checkbox-group
+	label
+		position relative
+		width 100%
+		display block
+		margin-bottom 14px
+
+input[type=checkbox]
+input[type=radio]
+	display none
+	
+label > input[type=checkbox] + span
+label > input[type=radio] + span
+	padding-left 30px
+	font-size 15px
+	display block
+	
+	&:before
+	&:after
+		position absolute
+		display block
+		content ''
+		
+	&:before
+		top -2px
+		left 0
+		width 16px
+		height 16px
+		border 1px solid lightgrey
+		
+
+label > input[type=checkbox] + span	
+	&:after
+		@extend .icon
+		sprite($check)
+		display none
+		top 3px
+		left 5px
+		
+label > input[type=radio] + span
+	&:before
+		border-radius 10px
+
+	&:after
+		display none
+		border-radius 10px
+		background-color darkgrey
+		width 10px
+		height 10px
+		top 2px
+		left 4px
+	
+label > input[type=checkbox]:checked + span
+label > input[type=radio]:checked + span
+	&:before
+		border-color darkgrey
+
+	&:after
+		display block
+		
+label > input[type=checkbox]:disabled + span
+label > input[type=radio]:disabled + span
+	opacity 0.25
+	
+	&:before
+		border-color black
+		
+// ----------------------------------------------------------------------		
+// Range selector
+// ----------------------------------------------------------------------
+range-selector
+	select
+		width 35%
+		max-width 80px
+		&:nth-child(odd)
+			margin-right 10px
+			
+		&:nth-child(even)
+			margin-left 10px	
+
