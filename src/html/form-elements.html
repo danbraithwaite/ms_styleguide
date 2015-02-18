@@ -1,0 +1,347 @@
+@@include('./partials/html-top.html')
+
+	<section>
+		<header>
+			<h2>FORM ELEMENTS</h2>
+			<p>Baisc elements required to make a form; including input fields, dropdowns, checkboxes, radio buttons, sliders, acordias and togggles.</p>
+		</header>
+	</section>	
+
+	<main id="examples">
+
+
+		<!--
+		========================================================================================
+		-->
+		<section>
+			<header>
+				<h4>Input Field</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<input type="text"></input>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Field Colour: #f8f8f8</li>
+				</ul>
+				<ul>
+					<li>Field Border: 1px #cccccc</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Active State</example-title>
+				<example-container>
+					<input type="text" class="forced-focus" value="some value"></input>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Field Colour: #ffffff</li>
+				</ul>
+				<ul>
+					<li>Field Border: 1px #333333</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Error State</example-title>
+				<example-container>
+					<label class="error">
+						<input type="text" class="error" value="some value"></input>
+						<input-error>
+							Please enter a valid email address
+						</input-error>
+					</label>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #ea122a</li>
+				</ul>
+				<ul>
+					<li>Field Colour: #ffffff</li>
+					<li>Field Border: 1px #ea122a</li>
+				</ul>
+				<ul>
+					<li>Error box Colour: #fff3f4</li>
+					<li>Error box borde: 1px #ea122a</li>
+					<li>Error font size: 13px</li>
+					<li>Error font colour: #ea122a</li>
+				</ul>
+
+			</attribute-list>
+		</section>
+
+
+		<section>
+			<header>
+				<h4>Text Area</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<textarea></textarea>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Field Colour: #f8f8f8</li>
+				</ul>
+				<ul>
+					<li>Field Border: 1px #cccccc</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<textarea class="forced-focus"></textarea>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Field Colour: #ffffff</li>
+				</ul>
+				<ul>
+					<li>Field Border: 1px #333333</li>
+				</ul>
+
+			</attribute-list>
+		</section>
+
+	<section>
+			<header>
+				<h4>Dropdown</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<select>
+						<option disabled selected>Please select...</option>
+						<option value="mr">Mr</option>
+						<option value="mrs">Mrs</option>
+						<option value="miss">Miss</option>
+						<option value="ms">Ms</option>
+						<option value="dr">Dr</option>
+						<option value="lord">Lord</option>
+						<option value="lady">Lady</option>
+						<option value="sir">Sir</option>
+						<option value="dame">Dame</option>
+					</select>
+				</example-container>
+			</element-example>
+	
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Field Colour: #f8f8f8</li>
+					<li>Field Border: 1px #cccccc</li>
+				</ul>
+			</attribute-list>
+		</section>
+
+
+
+<h3>Dropdown</h3>
+
+<example-title>Inactive state</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Field Colour: #f8f8f8</li>
+<li>Field Border: 1px #cccccc</li>
+</ul>
+
+
+<example-title>Active State</example-title>
+
+<p>use default system dropdown menus</p>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Field Colour: #ffffff</li>
+<li>Field Border: 1px #333333</li>
+</ul>
+
+
+<h3>Checkbox</h3>
+
+<example-title>Inactive state</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Checkbox Colour: #f8f8f8</li>
+<li>Checkbox Border: 1px #cccccc</li>
+</ul>
+
+
+<example-title>Active State</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Checkbox Colour: #ffffff</li>
+<li>Checkbox Border: 1px #333333</li>
+<li>Tick Icon colour: #ffffff</li>
+</ul>
+
+
+<h4>Disabled State</h4>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Disabled Text Colour: #cccccc</li>
+<li>Checkbox Colour: #ffffff</li>
+<li>Checkbox Border: 1px #333333</li>
+</ul>
+
+
+<h3>Radio Button</h3>
+
+<example-title>Inactive state</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Radio Colour: #f8f8f8</li>
+<li>Radio Border: 1px #cccccc</li>
+</ul>
+
+
+<example-title>Active State</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Radio Colour: #bdd755</li>
+<li>Checkbox Border: 1px #cccccc</li>
+</ul>
+
+
+<h4>Disabled State</h4>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Disabled Text Colour: #cccccc</li>
+<li>Radio Colour: #f8f8f8</li>
+<li>Radio Border: 1px #cccccc</li>
+</ul>
+
+
+<h3>Range Selector</h3>
+
+<p>QUESTION - This is just two dropdowns</p>
+
+<h4>Accordian</h4>
+
+<p><strong>Not a form element</strong></p>
+
+<h4>Inactive State</h4>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Divider colour: #333333</li>
+<li>Arrow colour: #333333</li>
+</ul>
+
+
+<h4>Active State</h4>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Divider colour 1: #333333</li>
+<li>Divider colour 2: #cccccc</li>
+<li>Arrow colour: #333333</li>
+</ul>
+
+
+<h3>FIELD WITH BUTTON</h3>
+
+<example-title>Inactive state</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Field Colour: #f8f8f8</li>
+<li>Field Border: 1px #cccccc</li>
+</ul>
+
+
+<example-title>Active State</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li>Colour: #333333</li>
+<li>Field Colour: #ffffff</li>
+<li>Field Border: 1px #333333</li>
+</ul>
+
+
+<example-title>Error State</example-title>
+
+<ul>
+<li>Font weight: regular</li>
+<li>Font size: 15px</li>
+<li><p>Colour: #ea122a</p></li>
+<li><p>Field Colour: #ffffff</p></li>
+<li><p>Field Border: 1px #ea122a</p></li>
+<li><p>Error box Colour: #fff3f4</p></li>
+<li>Error box borde: 1px #ea122a</li>
+<li>Error font size: 13px</li>
+<li>Error font colour: #ea122a</li>
+</ul>
+
+
+
+	</main>
+
+@@include('./partials/html-bottom.html')

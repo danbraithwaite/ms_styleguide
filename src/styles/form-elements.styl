@@ -1,0 +1,95 @@
+// -----------------------------------------------------
+// Page Setup
+// -----------------------------------------------------
+			
+element-example-layout()
+
+
+// -----------------------------------------------------
+// Form stuff
+// -----------------------------------------------------
+
+input[type=text]
+input[type=email]
+input[type=password]
+textarea
+select
+	border 1px solid lightgrey
+	background-color backgroundgrey
+	line-height 36px
+	padding 0
+	text-indent 10px
+	width 80%
+	font-size 15px
+	
+	&:focus
+	&.forced-focus
+		border 1px solid black
+		outline none
+		
+textarea
+	min-height 114px
+
+
+select
+	// In  prod you'll need a more robust styled select
+	appearance none
+	border-radius 0
+	background-repeat no-repeat
+	background-position 95% center
+	background-image url('/images/arrow-select.png')
+	
+	+retina()
+		background-image url('/images/arrow-select@2x.png')
+		background-size 12px
+	
+	
+input-error
+	display none
+	
+// Inputs should be wrapped in a label tag
+label.error
+	position relative
+	
+	input[type=text]
+	input[type=email]
+	input[type=password]
+		border 1px solid errorRed
+		background-color errorPink
+		color errorRed
+
+	input-error
+		display block
+		position absolute
+		padding 12px 12px 11px
+		color errorRed
+		background errorPink
+		border 1px solid errorRed
+		top -60px
+		font-size 13px
+		right 0
+		left 0
+		
+		&:after
+		&:before
+			top 100%
+			left 10%
+			border solid transparent
+			content ''
+			height 0
+			width 0
+			position absolute
+			pointer-events none
+		
+
+		&:after
+			border-color rgba(213, 151, 151, 0)
+			border-top-color errorPink
+			border-width 4px
+			margin-left -4px
+			
+		&:before
+			border-color rgba(245, 0, 0, 0)
+			border-top-color #f50000
+			border-width 5px
+			margin-left -5px
