@@ -17,7 +17,8 @@ $hero-promo
 	background-size cover
 	position relative
 	margin-top 5%
-	margin-bottom 65%
+
+	
 	
 	promo-image-placeholder
 		display block
@@ -28,6 +29,9 @@ $hero-promo
 		padding-bottom 35.15%
 		height 35.15%
 		background-size cover
+		
+		+below(682px)
+			padding-bottom 65%
 		
 	promo-copy
 		h1
@@ -77,10 +81,11 @@ $hero-promo
 					display none
 					
 		&:nth-child(even)
-			position absolute
+			display block
+			position relative
 			width 100%
-			left 0
 			top 0
+			left 0
 			padding-top 35.15%
 			
 			h1, p,  promo-cta
@@ -100,6 +105,7 @@ $hero-promo
 					font-size 40px
 					
 			+below(682px)
+				padding-top 65%
 				promo-cta
 					display block
 					border-bottom 1px solid mediumgrey
@@ -115,6 +121,8 @@ hero-promo-right
 	@extend $hero-promo
 	promo-image-placeholder
 		background-image url(/images/promo-1.jpg)
+		+below(682)
+			background-position center left
 	
 	promo-copy
 		left 55%
@@ -123,6 +131,8 @@ hero-promo-left
 	@extend $hero-promo
 	promo-image-placeholder
 		background-image url(/images/promo-2.jpg)
+		+below(682)
+			background-position center right	
 		
 	promo-copy
 		left 5%
