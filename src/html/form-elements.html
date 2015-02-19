@@ -40,7 +40,7 @@
 			<element-example>
 				<example-title>Active State</example-title>
 				<example-container>
-					<input type="text" class="forced-focus" value="some value"></input>
+					<input type="text" data-state="focused" value="some value"></input>
 				</example-container>
 			</element-example>
 	
@@ -59,8 +59,8 @@
 			<element-example>
 				<example-title>Error State</example-title>
 				<example-container>
-					<label class="error">
-						<input type="text" class="error" value="some value"></input>
+					<label data-state="error">
+						<input type="text" data-state="error" value="some value"></input>
 						<input-error>
 							Please enter a valid email address
 						</input-error>
@@ -116,7 +116,7 @@
 			<element-example>
 				<example-title>Inactive state</example-title>
 				<example-container>
-					<textarea class="forced-focus"></textarea>
+					<textarea data-state="focused"></textarea>
 				</example-container>
 			</element-example>
 	
@@ -329,7 +329,7 @@
 
 		<section>
 			<header>
-				<h4>Dropdown</h4>
+				<h4>Range</h4>
 			</header>
 			
 			<element-example>
@@ -371,71 +371,142 @@
 			</attribute-list>
 		</section>
 
+		<section>
+			<header>
+				<h4>Accordian</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Active state</example-title>
+				<example-container>
+					<accordian-container>
+						<accordian-group>
+							<header>Heading</header>
+						</accordian-group>
+					</accordian-container>
+				</example-container>
+			</element-example>
+			
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Divider colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Arrow colour: #333333</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<accordian-container>
+						<accordian-group data-state="open">
+							<header>Heading</header>
+							<accordian-content>
+								<p>Text with number (23)</p>
+								<p>Text with number (21)</p>
+								<p>Text with number (23)</p>
+							</accordian-content>
+						</accordian-group>
+					</accordian-container>
+				</example-container>
+			</element-example>
+			
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Divider colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Arrow colour: #333333</li>
+				</ul>
+			</attribute-list>	
+	
+		</section>
+
+		<section>
+			<header>
+				<h4>Field With Button</h4>
+			</header>
+			
+			<element-example>
+				<example-title>Inactive state</example-title>
+				<example-container>
+					<input-button-group>
+						<input type="text"><input type="submit" value="go">
+					</input-button-group>
+				</example-container>
+			</element-example>
+			
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Field Colour: #f8f8f8</li>
+					<li>Field Border: 1px #cccccc</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Active State</example-title>
+				<example-container>
+					<input-button-group>
+						<input type="text" data-state="focused"><input type="submit" value="go">
+					</input-button-group>
+				</example-container>
+			</element-example>
+			
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+					<li>Field Colour: #ffffff</li>
+					<li>Field Border: 1px #333333</li>
+				</ul>
+			</attribute-list>
+
+			<element-example>
+				<example-title>Error State</example-title>
+				<example-container>
+					<input-button-group>
+						<label data-state="error">
+						<input type="text" data-state="error" value="some value"></input>
+						<input-error>
+							Please enter a valid email address
+						</input-error>
+					</label><input type="submit" value="go">
+					</input-button-group>
+				</example-container>
+			</element-example>
+			
+			<attribute-list>
+				<ul>
+					<li>Font weight: regular</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #ea122a</li>
+				</ul>
+				<ul>
+					<li>Field Colour: #ffffff</li>
+					<li>Field Border: 1px #ea122a</li>
+				</ul>
+				<ul>
+					<li>Error box Colour: #fff3f4</li>
+					<li>Error box borde: 1px #ea122a</li>
+					<li>Error font size: 13px</li>
+					<li>Error font colour: #ea122a</li>
+				</ul>
+			</attribute-list>
+		
+
+		</section>
+
 	</main>
-
-<h4>Accordian</h4>
-
-<p><strong>Not a form element</strong></p>
-
-<h4>Inactive State</h4>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Divider colour: #333333</li>
-<li>Arrow colour: #333333</li>
-</ul>
-
-
-<h4>Active State</h4>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Divider colour 1: #333333</li>
-<li>Divider colour 2: #cccccc</li>
-<li>Arrow colour: #333333</li>
-</ul>
-
-
-<h3>FIELD WITH BUTTON</h3>
-
-<example-title>Inactive state</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Field Colour: #f8f8f8</li>
-<li>Field Border: 1px #cccccc</li>
-</ul>
-
-
-<example-title>Active State</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li>Colour: #333333</li>
-<li>Field Colour: #ffffff</li>
-<li>Field Border: 1px #333333</li>
-</ul>
-
-
-<example-title>Error State</example-title>
-
-<ul>
-<li>Font weight: regular</li>
-<li>Font size: 15px</li>
-<li><p>Colour: #ea122a</p></li>
-<li><p>Field Colour: #ffffff</p></li>
-<li><p>Field Border: 1px #ea122a</p></li>
-<li><p>Error box Colour: #fff3f4</p></li>
-<li>Error box borde: 1px #ea122a</li>
-<li>Error font size: 13px</li>
-<li>Error font colour: #ea122a</li>
-</ul>
 
 @@include('./partials/html-bottom.html')

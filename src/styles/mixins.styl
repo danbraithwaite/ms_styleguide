@@ -14,7 +14,7 @@ element-example-layout()
 			stack()
 			margin-bottom 10px
 		
-		header
+		> header
 			margin 0
 			center 100%
 			border-bottom 1px solid lightgrey
@@ -41,3 +41,8 @@ element-example-layout()
 		example-container
 			col(2/3)
 			text-align left
+			
+truncate-text()
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;

@@ -26,6 +26,7 @@ select
 	
 	&:focus
 	&.forced-focus
+	&[data-state='focused']
 		border 1px solid darkgrey
 		outline none
 
@@ -40,6 +41,7 @@ label
 	user-select none
 
 label.error
+label[data-state=error]
 	position relative
 	
 	input[type=text]
@@ -183,6 +185,22 @@ label > input[type=radio]:disabled + span
 		border-color black
 		
 // ----------------------------------------------------------------------		
+// Input button group
+// ----------------------------------------------------------------------
+
+input-button-group
+	input[type=text]
+		width 77%
+		
+	input[type=submit]
+		width 20%
+		border mediumgrey
+		line-height 36px
+		float right
+		padding 0
+		truncate-text()
+		
+// ----------------------------------------------------------------------		
 // Range selector
 // ----------------------------------------------------------------------
 range-selector
@@ -193,5 +211,79 @@ range-selector
 			margin-right 10px
 			
 		&:nth-child(even)
-			margin-left 10px	
+			margin-left 10px
+			
+
+
+// ----------------------------------------------------------------------		
+// Accordian
+// ----------------------------------------------------------------------
+
+accordian-container
+	display block
+	width 100%
+	
+	> * 
+		display block
+
+	accordian-group
+		border 1px solid darkgrey
+		border-width 1px 0
+		position relative
+		
+		> header
+			width 100%
+			padding 10px 10px 10px 60px
+			truncate-text()
+			
+			&:before
+				content ''
+				display block
+				@extend .icon
+				sprite($arrow-down-small)
+				transform rotate(-90deg)
+				transition transform .25s ease-out
+				
+				position absolute
+				left 30px
+				top 14px
+				
+		accordian-content > p
+			padding-left 30px
+			margin-bottom 10px
+			truncate-text()
+			
+			&:first-child
+				margin-top 20px
+			
+			&:last-child
+				margin-bottom 20px
+			
+	accordian-group[data-state='open']
+		header
+			margin-bottom 10px
+			border-bottom 1px solid lightgrey
+			
+			&:before
+				transform none
+			
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
