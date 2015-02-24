@@ -117,3 +117,93 @@ attribute-list
 			padding 0
 			text-align left
 			font-size 13px
+			
+
+table
+	width 100%
+	margin 40px 0
+	line-height 40px
+	border 1px solid lightgrey
+	
+tr 
+td
+th
+	border 1px solid lightgrey
+	
+	&:last-child
+		border none
+
+	+below(790px)
+		display block
+		
+thead tr
+	+below(790px)
+		position absolute
+		top -99999px
+		letf -99999px
+
+	
+th 
+td 
+	padding 10px
+	@extend p
+
+
++below(790px)
+
+
+	tbody
+	display block
+
+
+	tr
+		border-width 0 0 1px 0
+		width 100%
+		right 0
+	
+	td
+		position relative
+		padding-left 50%
+		
+		border-width 0 0 1px 0
+		
+		&:first-child
+			background-color darkgrey
+			color backgroundgrey
+			font-weight bold
+		
+		&:before
+				position absolute
+				top 0px
+				bottom 0px 
+				left 6px 
+				width 45%
+				padding-right 10px
+				white-space no-wrap
+				line-height 40px
+				border-right 1px solid lightgrey
+
+	td:nth-of-type(1):before 
+		content 'Tag'
+		
+	td:nth-of-type(2):before 
+		content 'Font'
+		
+	td:nth-of-type(3):before 
+		content 'Weight'
+		
+	td:nth-of-type(4):before 
+		content 'Size'
+		
+	td:nth-of-type(5):before 
+		content 'Leading'
+		
+	td:nth-of-type(6):before 
+		content 'Main Colour'
+		
+	td:nth-of-type(7):before 
+		content 'Usage'
+	
+
+
+
