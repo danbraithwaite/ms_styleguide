@@ -1,0 +1,104 @@
+/*
+NOTE:
+In real life, tooltips may have to be positioned with 
+javascript since the tool tips can be of any size.
+*/
+
+element-example-layout()
+
+.tooltip-examples section p 
+    text-align left
+    margin 20px 10px
+
+.tooltip-examples example-container
+    min-height 140px
+    width 100%
+    position relative
+   text-align left
+
+p.tooltip-example
+    position absolute
+    width 120px
+    
+    &.top
+        top 100px
+        left 50%
+        margin-left -85px
+        
+    &.bottom
+        top 0px
+        left 50%
+        margin-left -85px
+        
+    &.left
+        top 0px
+        right 10%
+        
+    &.right
+        top 0px
+        left 10%
+        
+
+tool-tip
+    @extend p
+    position absolute
+    padding 20px
+    background backgroundgrey
+    border-radius 5px
+    box-shadow 0px 0px 3px 0 rgba(0, 0, 0, 0.4)
+    width 170px
+    
+    &:after
+        content ''
+        position absolute
+        width 0
+        height 0
+        border 5px solid backgroundgrey
+        border-color transparent transparent backgroundgrey backgroundgrey
+        transform-origin 0 0.1
+        box-shadow -1px 1px 2px 0 rgba(0, 0, 0, 0.2)
+        
+    
+    &[data-pos=top]
+        top -100px
+        left 0
+
+        &:after
+            margin-left 2px
+            bottom -10px
+            left 5%
+            transform-origin 0 0
+            transform rotate(-45deg)
+        
+    &[data-pos=bottom]
+        bottom -100px
+        left 0
+        
+        &:after
+            margin-left 2px
+            top -5px
+            left 5%
+            transform rotate(135deg)
+        
+    &[data-pos=right]
+        top -15px
+        right -180px
+        &:after
+            margin-left 2px
+            top 25%
+            left -6px
+            transform rotate(45deg)
+            
+    &[data-pos=left]
+        top -15px
+        left -180px
+        &:after
+            margin-left 2px
+            top 25%
+            right -5px
+            transform rotate(-135deg)
+            
+img.bag-tooltip
+    max-width 339px
+    margin 0 auto
+    display block
