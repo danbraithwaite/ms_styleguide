@@ -3,16 +3,104 @@
 	<main id="alerts-page">
 		
 		<section>
+			<header>
+				<h2 class="london">Alerts</h2>
+				<p>Feedback for users for success messages, alerts/information and errors. Alerts can be either with an icon or without. You can also use medium font weight for the important part of the message to help make an impact. All copy is 15px Medium/Regular. Try to keep it to one line...</p>
+				<h4>Success</h4>
+				<p>Example use case: “More in your bag than you expected? We saved the items you added to your bag on your last visit.”</p>
+
+			</header>
 
 			<article>
-				<header>
-					<h2 class="london">Alerts</h2>
-					<p>Feedback for users for success messages, alerts/information and errors. Alerts can be either with an icon or without. You can also use medium font weight for the important part of the message to help make an impact. All copy is 15px Medium/Regular. Try to keep it to one line...</p>
-					<h4>Success</h4>
-					<p>Example use case: “More in your bag than you expected? We saved the items you added to your bag on your last visit.”</p>
-				</header>
+				<success-banner-icon>
+					<p><strong>Congratulations!</strong> This is what a success message looks like with one line of copy and an icon.</p>
+				</success-banner-icon>
+
+				<attribute-list>
+					<ul>
+						<li>Font weight: medium</li>
+						<li>Font size: 15px</li>
+						<li>WColour: #333333</li>
+					</ul>
+
+					<ul>
+						<li>Icon colour: #bdd755</li>
+						<li>border: #bdd755</li>
+						<li>Box fill/bg: #f5f9e5</li>
+					</ul>
+					
+				</attribute-list>
+
+				<success-banner>
+					<p><strong>Congratulations!</strong> This is what a success message looks like with one line of copy and no icon.</p>
+				</success-banner>
+
+				<success-banner-icon>
+					<p><strong>Congratulations!</strong> This is what a success message looks like with two lines of copy and an icon:</p>
+					<ul>
+						<li>We’ve gone ahead and applied a discount to your order!</li>
+					</ul>
+				</success-banner-icon>	
+				
+			</article>
+		</section>
+
+		<section>
+			<header>
+				<h4>Important info</h4>
+				<p>Example use case: “Please note that all of our Christmas delivery order deadlines have now passed so we are no longer able to offer delivery before Christmas.”</p>
+			</header>
+			<article>
+				
+				<warning-banner-icon>
+					<p><strong>Something important is happening</strong> and we want to make sure you are in the loop.</p>
+				</warning-banner-icon>
+
+			</article>
+
+			<attribute-list>
+				<ul>
+					<li>Font weight: medium</li>
+					<li>Font size: 15px</li>
+					<li>Colour: #333333</li>
+				</ul>
+				<ul>
+					<li>Icon colour: #ffcd00</li>
+					<li>border: #ffcd00</li>
+					<li>Box fill/bg: #ffffca</li>
+				</ul>
+			</attribute-list>
+		</section>
+		
+		
+		<section>
+			<header>
+				<h4>Error alert</h4>
+				<p>Example use case: “We’re sorry - Striped Rope Tie Dress with StayNEW™ has been removed from your shopping bag”</p>
+			</header>
+			<article>
+
+				<error-banner-icon>
+					<p><strong>We’re sorry</strong> but we’ve completely run out of stock since you added this to your bag.</p>
+				</error-banner-icon>
+
+				<attribute-list>
+					<ul>
+						<li>Font weight: medium</li>
+						<li>Font size: 15px</li>
+						<li>Colour: #333333</li>
+					</ul>
+					<ul>
+						<li>Icon colour: #ea122a</li>
+						<li>Box border: #ea122a</li>
+						<li>Box fill/bg: #fff3f4</li>
+					</ul>
+				</attribute-list>
+
 			</article>
 		</section>
 	</main>
+
+	
 
 @@include('./partials/html-bottom.html')
