@@ -1,0 +1,35 @@
+footer
+	@extend #header
+	display block
+	height 96px
+	position relative
+	user-select none
+	
+	+below(small)
+		background-position top 30px center
+		height 196px
+	
+	a[data-role=download-guide-button]
+		border 1px solid white
+		display block
+		position absolute
+		color white
+		padding 20px
+		top 20px
+		right 20px
+		padding-left 90px
+		
+		&:before
+			position absolute
+			top 10px
+			left 10px
+			content ''
+			display block
+			@extend .icon		
+			sprite($download-white)
+			
+		+below(small)
+			left 20px
+			top 120px
+			text-align center
+		
