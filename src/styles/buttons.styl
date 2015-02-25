@@ -20,6 +20,10 @@ button($color)
 	cursor pointer
 	height 45px
 	
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+	
 	&.full-width
 		width 100%
 	
@@ -118,9 +122,11 @@ tab-button-group
 	> label
 		display inline-block
 		margin 0
-		padding 0 20px
+		padding 0 10%
 		width 50%
 		text-align center
+		white-space nowrap
+		text-overflow ellipsis
 		
 		&:first-child
 			background-color black
