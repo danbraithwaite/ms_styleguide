@@ -1,0 +1,90 @@
+modal-view
+	position relative
+	margin-bottom 5%
+	center(702px)
+	box-shadow 0 0 8px rgba(0,0,0,0.25)
+	padding 30px
+	background-color white
+	font-family arial
+	
+	button[data-role=close-button]
+		position absolute
+		top 30px
+		right 30px
+		font-size 0
+		padding 0
+		background-color transparent
+		@extend .icon
+		sprite($close)
+		overflow visible
+		cursor pointer
+		
+		// hit area
+		&:after
+			display block
+			content ''
+			position absolute
+			top -20px
+			left -20px
+			bottom -20px
+			right -20px
+		
+	
+	h3
+		margin 0 0 30px 0
+		
+	inline-radio-group
+		@extend radio-group
+		width 100%
+		display block
+		margin 30px 0
+		
+		label 
+			display inline-block
+			width auto
+			margin-right 20px
+			font-weight light
+			color darkgrey
+	
+	table
+		margin 0
+		
+		th
+			text-align left	
+
+		tbody tr:nth-child(odd)
+			background-color backgroundgrey
+			
+		tbody tr td
+			text-align center
+			&:nth-child(1)
+				text-align left
+				
+	form 
+		label
+			center(448px, pad: 5%)
+			
+		checkbox-group label
+			margin 10px 0
+			
+		button
+			float right
+			
+		p 
+			margin 30px 0
+			
+		p.text-with-button
+			text-align right
+			line-height 40px
+			margin 0
+			
+			button  
+				margin-left 20px
+		
+	checkbox-group
+		display block
+		margin 30px 0
+			
+			
+	accordian-container
+		margin 30px 0 0

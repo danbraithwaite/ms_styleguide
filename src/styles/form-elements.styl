@@ -21,7 +21,6 @@ select
 	line-height 36px
 	padding 0
 	text-indent 10px
-	width 80%
 	font-size 15px
 	
 	&:focus
@@ -29,11 +28,34 @@ select
 	&[data-state='focused']
 		border 1px solid darkgrey
 		outline none
+		
+	element-example &
+		width 80%
 
+input-note
+	display block
+	padding 10px 0 0
+	color mediumgrey
+	font-size 13px
+	text-align right
 
 input-error
 	display none
 
+form 
+	margin 20px 0 0
+
+	label
+		display block
+		margin 0 0 30px
+		
+		input
+		select
+			display block
+			margin 10px 0 0
+			width 100%
+		select 
+			width 60%
 	
 // Inputs should be wrapped in a label tag
 
@@ -123,6 +145,9 @@ checkbox-group
 		width 100%
 		display block
 		margin-bottom 14px
+		
+radio-group
+	@extend checkbox-group
 
 input[type=checkbox]
 input[type=radio]
@@ -228,10 +253,15 @@ accordian-container
 
 	accordian-group
 		border 1px solid darkgrey
-		border-width 1px 0
+		border-width 1px 0 0
 		position relative
 		
-		> header
+		&:last-child
+			border-width 1px 0 1px
+		
+		
+		accordian-header
+			display block
 			width 100%
 			padding 10px 10px 10px 60px
 			truncate-text()

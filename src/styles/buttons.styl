@@ -12,13 +12,13 @@ button($color)
 	display inline-block
 	position relative
 	border none
-	color darkgrey
+	color white
 	margin 0
 	padding 0 20px
 	background-color $color
-	line-height 40px
 	user-select none
 	cursor pointer
+	height 45px
 	
 	&.full-width
 		width 100%
@@ -37,24 +37,31 @@ button($color)
 		cursor no-drop
 		
 	&[data-role=secondary]
-		background-color secondaryCtaBgColor
+		color darkgrey
+		background-color white
+		border 3px solid black
 		
 		&.hover-state
 		&:hover
-			background-color lightgrey
+			color white
+			background-color black
 			
 		&.active-state
 		&:active
-			background-color mediumgrey
+			color white
+			background-color darkgrey
+			border-color darkgrey
 			
 		&:disabled
-			color lightgrey
 			background-color backgroundgrey
+			border-color backgroundgrey
+			color lightgrey
 			cursor no-drop
 		
 	&[data-role=tertiary]
 		background-color white
-		border 1px solid darkgrey
+		color darkgrey
+		border 3px solid lightgrey
 		
 		&.hover-state
 		&:hover
@@ -68,24 +75,28 @@ button($color)
 		&:disabled
 			color lightgrey
 			background-color backgroundgrey
+			border-color backgroundgrey
 			cursor no-drop
 			
 	&[data-role=checkout-button]
-		line-height 48px
+		height 48px
 		font-size 18px
 
 button
 input[type=submit]
-	button(green)
+	button(darkgrey)
 	
 icon-button
 	button(white)
-	border 1px solid lightgrey
+	color darkgrey
+	border 3px solid lightgrey
 	padding-left 45px
+	line-height 42px
 	
 	&:before
 		@extend .icon
 		sprite($gift-small)
+
 		position absolute
 		display block
 		content ''
@@ -99,7 +110,7 @@ icon-button
 
 tab-button-group
 	display block
-	border 1px solid lightgrey
+	border 3px solid black
 	line-height 40px
 	width 70%
 	
@@ -110,6 +121,10 @@ tab-button-group
 		padding 0 20px
 		width 50%
 		text-align center
+		
+		&:first-child
+			background-color black
+			color white
 		
 		> input
 			display none

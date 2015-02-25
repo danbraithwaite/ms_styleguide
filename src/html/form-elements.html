@@ -221,11 +221,11 @@
 			<element-example>
 				<example-title>Inactive state</example-title>
 				<example-container>
-					<checkbox-group>
+					<radio-group>
 						<label><input name="rg1" type="radio"> <span>Radio option 1</span></label>
 						<label><input name="rg1" type="radio"> <span>Radio option 2</span></label>
 						<label><input name="rg1" type="radio"> <span>Radio option 3</span></label>
-					</checkbox-group>
+					</radio-group>
 				</example-container>
 			</element-example>
 	
@@ -381,7 +381,13 @@
 				<example-container>
 					<accordian-container>
 						<accordian-group>
-							<header>Heading</header>
+							<accordian-header>Heading</accoridan-header>
+						</accordian-group>
+						<accordian-group>
+							<accordian-header>Heading</accoridan-header>
+						</accordian-group>
+						<accordian-group>
+							<accordian-header>Heading</accoridan-header>
 						</accordian-group>
 					</accordian-container>
 				</example-container>
@@ -404,7 +410,7 @@
 				<example-container>
 					<accordian-container>
 						<accordian-group data-state="open">
-							<header>Heading</header>
+							<accordian-header>Heading</accordian-header>
 							<accordian-content>
 								<p>Text with number (23)</p>
 								<p>Text with number (21)</p>

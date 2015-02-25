@@ -1,0 +1,176 @@
+@@include('./partials/html-top.html')
+<main>
+
+	<section>
+		<header>
+			<h3>Modals</h3>
+		</header>
+	</section>
+
+
+	<modal-view data-role="size-guide">
+		<button data-role="close-button">close</button>
+		<h3>Size guide</h3>
+		<p>Our womanswear sizes are designed to fit the below body measurements. You'll also find a handy <a href="href#">international size conversion guide.</a></p>
+
+		<inline-radio-group>
+			<label>View in:</label>
+			<label><input name="rg1" type="radio" checked> <span>CMS</span></label>
+			<label><input name="rg1" type="radio"> <span>Inches</span></label>
+		</inline-radio-group>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="10">Formal Trousers</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Waist/Length</td>
+					<td>2</td>
+					<td>4</td>
+					<td>6</td>
+					<td>8</td>
+					<td>10</td>
+					<td>12</td>
+					<td>14</td>
+					<td>18</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+					<td>74</td>
+				</tr>
+				<tr>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+					<td>76</td>
+				</tr>
+				<tr>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+					<td>79</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p><a href="" src="#">View All Size Guides</a></p>
+
+		<accordian-container>
+			<accordian-group>
+				<accordian-header>Measuring Advice</accordian-header>
+			</accordian-group>
+			<accordian-group>
+				<accordian-header>Style</accordian-header>
+			</accordian-group>
+		</accordian-container>
+
+	</modal-view>
+
+	<modal-view data-role="sign-in">
+		<h3>Sign In</h3>
+		<p>Please sign into your M&amp;S account. If you don't have an account you can <b><a href="#">Create one now</a></b>.</p>
+		<form>
+			<label>
+				Email
+				<input type="text" placeholder="firstname@email.com">
+			</label>
+			<label>
+				Password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+			</label>
+
+			<p class="text-with-button">
+				Your personal details are safe with us. View our privacy policy.
+				<button>Sign in</button>
+			</p>
+		</form>
+		<button data-role="close-button">close</button>
+	</modal-view>
+
+	<modal-view data-role="sign-in">
+		<h3>Create an account</h3>
+		<form>
+			<label>
+				Title
+				<select name="title" id="">
+					<option value="select" disabled selected>Please select</option>
+					<option value="mr">Mr</option>
+					<option value="mrs">Mrs</option>
+					<option value="ms">Ms</option>
+					<option value="miss">Miss</option>
+					<option value="dr">Doctor</option>
+					<option value="lord">Lord</option>
+				</select>
+			</label>
+			<label>
+				First name
+				<input type="text" placeholder="John">
+			</label>
+			<label>
+				Last name
+				<input type="text" placeholder="smith">
+			</label>
+			<label>
+				Email
+				<input type="email" placeholder="john.smith@gmail.com">
+			</label>
+			<label>
+				Password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+			</label>
+			<label>
+				Retype your password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+				<input-note>Minimum of 8 characters, using both letters &amp; numbers</input-note>
+			</label>
+
+			<label>
+				Phone number (Optional)
+				<input type="text" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+			</label>
+			
+			<p>Please tick the boxes below if you do not wish to recieve updates from us by email and/or text relating to Marks &amp; Spencers products and services</p>
+			
+			<checkbox-group>
+				<label><input type="checkbox" checked> <span>I do NOT want to recieve email updates</span></label>
+				<label><input type="checkbox"> <span>I do NOT want to recieve text updates</span></label>
+			</checkbox-group>
+
+			<p class="alternate">By clicking 'Create an account' you agree to cookies being used in accordance with our <a href="#">Cookie Policy</a> and to recieve updates from us, by email and text message, unless you have ticked the relevant boxes above. You can disable cookies at any time - see our <a href="#">Cookie Policy</a> for details</p>
+		
+			<p class="alternate">Your personal details are safe with us. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
+			
+			<button>Create an Account</button>
+
+		</form>
+		
+
+		<button data-role="close-button">close</button>
+	</modal-view>
+
+</main>
+@@include('./partials/html-bottom.html')
