@@ -1,0 +1,79 @@
+#index main
+	center()
+	
+	h1
+		@extend h3
+		font-size 36px
+		text-transform none
+		text-align center
+		margin 70px 0
+
+	nav
+		col(2/12)
+		position relative
+		
+		a 
+			border none
+			cursor pointer
+			
+			&:hover
+				border-bottom 1px solid darkgrey
+				
+
+		&:after
+			content ''
+			display block
+			position absolute
+			top 0
+			right -20%
+			bottom 0
+			border 1px solid mediumgrey 
+			border-width 0 1px 0 0
+		
+		dl
+			list-style none
+			padding 0
+			margin 0
+			
+			dt
+				@extend p
+				font-weight bold
+				margin 50px 0 8px 0
+				&:first-child 
+					margin-top 0
+
+			li
+				@extend p
+				margin 0 0 8px 0
+	
+	article	
+		col(7/12)
+		shift(1/12)
+		text-align left
+		margin 0 0 100px 0
+		
+		section header
+			paddin 0
+			margin 0
+			text-align left
+			padding 0
+			
+			h3 
+				margin 0
+
+		p
+			padding 0
+			text-align left
+			
+		img
+			margin 0
+			padding 0
+			border 1px solid lightgrey
+		
+		figure
+			margin 35px 0
+			padding 0
+
+		figcaption
+			@extend p.alternate
+			text-align right

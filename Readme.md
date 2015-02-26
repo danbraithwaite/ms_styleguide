@@ -36,9 +36,9 @@ I've not included the downloadable PSDs in the git repo because they're too big.
 
 The HTML files are split into partials and the output HTML is generated with the `gulp html` task. 
 
-I've adopted a couple of conventions that may or may not be familiar to you. 
+I've tried out a couple of conventions that may or may not be familiar to you. 
 
-#### HTML Custom Elements
+##### HTML Custom Elements
 For better semantics and readability, this project makes liberal use of [HTML5's Custom tags](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/) rather than pollute the code with divs and classes. One example of that would be
 
 	<color-swatch-group>
@@ -53,7 +53,7 @@ For better semantics and readability, this project makes liberal use of [HTML5's
 		</color-swatch>
 	</color-swatch-group>
 
-#### Sparse use of classes
+##### Sparse use of classes
 Where possible, this project tries to avoid classes and favours semantic markup. So you won't see any classes relating to the grid system for example. In addition, it is preferable to use the `data-role` attibute convention (which is just a custom attribute) when specifying the role of an element that is ancillary to it's tag name. 
 
 However, only use this where it makes sense. You'll notice that the `color-swatch` example above uses a class to specify a color. There it makes sense. Buttons are a use case where `data-role` makes sense. 
