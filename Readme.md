@@ -1,16 +1,32 @@
 #M&S Styleguide
 
 ## Requirements
-- Git
-- Node.js
-- Stylus
-- Gulp.js
+- [Git](http://git-scm.com/)
+- [Node.js](http://nodejs.org/) `~0.10.x`
+- Stylus: `npm install stylus -g`
+- Gulp.js: `npm install gulp -g`
 
 ##Getting Started
 
 	git clone https://github.com/gargantuan/ms_styleguide.git
+	cd ms_styleguide
 	npm install
 	gulp serve
+
+If you get errors, it's most likely a problem with the `glaze` dependency. You'll need to install [Node Version Manager](https://github.com/creationix/nvm) and revert to node 0.10.25
+
+	curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+	
+	# Restart terminal
+	
+	source ~/.nvm/nvm.sh
+	nvm install 0.10.25
+	
+	cd ms_styleguide
+	npm install
+	gulp serve
+
+It's easiest to set the `DocumentRoot` for `localhost` to `ms_styleguide/build` to view this project in the browser. If you want somehting more fancy, you'll have to figure it out yourself.
 	
 ## Gulp Tasks
 
