@@ -2,6 +2,7 @@ body, html
 	height 100%
 	padding 0
 	margin 0
+	color darkgrey
 	background-color #f8f8f8
 	font-smoothing antialiased !important
 	
@@ -81,7 +82,7 @@ h4
 p
 	font-family 'MandS London W01 Regular';
 	font-size 15px
-	color darkgrey
+	color inherit
 	font-smoothing
 	line-height 22px
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -89,7 +90,7 @@ p
 	font-smoothing: antialiased !important;
 
 p.alternate
-	color darkgrey
+	color inherit
 	font-size 13px
 	line-height 20px
 	
@@ -208,6 +209,16 @@ td
 		
 		.type-styles &:nth-of-type(7):before 
 			content 'Usage'
+			
+download-nav
+	margin-top 50px
+	margin-bottom 50px
+	display block
+	center()
+	
+	a 
+		@extend p
+		font-weight bold 
 			
 
 
