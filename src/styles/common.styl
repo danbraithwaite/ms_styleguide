@@ -1,0 +1,142 @@
+body, html 
+	height 100%
+	padding 0
+	margin 0
+	color #000
+	background-color #f8f8f8
+	font-smoothing antialiased !important
+	
+* 
+	box-sizing border-box
+
+/* 
+There's a bit of magic happening here with the `section` element.
+
+We're using custom HTML elements (Yep, they're valid HTML5) and custom
+elements need to have their display property set. Typically, you'll 
+want them to be display block. And since we're making liberal use of the
+section tag, we may as well assume that the first child of <section> should 
+have it's display property set to `block`
+
+In addition, we're using a different clear fix to the one Jeet reccomends.
+*/
+section
+	
+	padding-bottom 60px
+
+	> *
+		display block
+		center(pad: 10px, gutter: 0.5% )
+		text-align center
+		
+	> header 
+		center(600px, pad: 10px, gutter: 1.66667%)
+		+below(medium)
+			center(pad: 20px)
+		
+	&:after
+		content:"";
+		display:table;
+		clear:both
+		
+		
+sub-section
+	col(1/2)
+	+below(medium)
+		stack()
+	
+	
+h1
+	font-family 'MandS Leeds'
+	font-size 60px
+	line-height 60px
+	text-transform uppercase
+	font-weight normal
+	
+h2
+	font-family 'MandS London'
+	font-size 36px
+	line-height 50px
+	font-weight normal
+	
+	&.leeds
+		font-family 'MandS Leeds'
+	
+h3
+	font-family 'MandS London'
+	font-size 25px
+	line-height 35px
+	font-weight normal
+	
+	&.leeds
+		font-family 'MandS Leeds'
+	
+	
+h4
+	font-family 'MandS London'
+	font-size 18px
+	line-height 28px 
+	font-weight normal
+	
+	&.leeds
+		font-family 'MandS Leeds'
+	
+
+p
+	font-family 'MandS London';
+	font-size 15px
+	color black
+	font-smoothing
+	line-height 22px
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+	font-smoothing: antialiased !important;
+
+p.alternate
+	color inherit
+	font-size 13px
+	line-height 20px
+	
+a 
+	border-bottom 1px solid black
+	text-decoration none
+	color black
+	cursor pointer
+	
+img
+	width 100%
+	
+
+attribute-list
+	display block
+	color lightgrey
+	cf()
+	
+	> ul
+		margin 0 0 20px 0
+		padding 0
+		list-style none
+		col(1/6, cycle: 6)
+			
+		+below(medium)
+			stack()
+		
+		> li
+			margin 0 0 4px 0
+			padding 0
+			text-align left
+			font-size 13px
+			
+download-nav
+	margin-top 50px
+	margin-bottom 50px
+	display block
+	center()
+	
+	a 
+		@extend p
+		font-weight bold 
+			
+
+
+

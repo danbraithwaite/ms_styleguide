@@ -1,130 +1,32 @@
-body, html 
-	height 100%
-	padding 0
-	margin 0
-	color darkgrey
-	background-color #f8f8f8
-	font-smoothing antialiased !important
-	
-* 
-	box-sizing border-box
 
-/* 
-There's a bit of magic happening here with the `section` element.
-
-We're using custom HTML elements (Yep, they're valid HTML5) and custom
-elements need to have their display property set. Typically, you'll 
-want them to be display block. And since we're making liberal use of the
-section tag, we may as well assume that the first child of <section> should 
-have it's display property set to `block`
-
-In addition, we're using a different clear fix to the one Jeet reccomends.
-*/
-section
-	
-	padding-bottom 60px
-
-	> *
-		display block
-		center(pad: 10px, gutter: 0.5% )
-		text-align center
-		
-	> header 
-		center(600px, pad: 10px, gutter: 1.66667%)
-		+below(medium)
-			center(pad: 20px)
-		
-	&:after
-		content:"";
-		display:table;
-		clear:both
-		
-		
-sub-section
-	col(1/2)
-	+below(medium)
-		stack()
-	
-	
-h1
-	font-family 'MandS Leeds W03 Light'
-	font-size 60px
-	line-height 60px
-	font-weight normal
-	text-transform uppercase
-	
-h2, h2.leeds
-	font-family 'MandS Leeds W03 Light'
-	font-size 36px
-	font-weight normal
-	line-height 50px
-	
-h2.london
-	font-weight normal
-	font-family 'MandS London W01 Regular'
-	
-h3, h3.london
-	font-weight normal
-	font-family 'MandS London W01 Regular'
+blockquote
+	width 20%
+	margin 38px auto
+	padding 38px 10px 21px
+	@extend h3.leeds
 	font-size 25px
 	line-height 35px
+	position relative
 
-h3.leeds
-	font-family 'MandS Leeds W03'
+	&:before
+	&:after
+		content ''
+		display block
+		background-color black
+		position absolute
+		left 30%
+		right 30%
 	
-h4
-	font-weight normal
-	font-family 'MandS London W01 Bold'
-	font-size 18px
-	line-height 28px 
-	
-
-p
-	font-family 'MandS London W01 Regular';
-	font-size 15px
-	color inherit
-	font-smoothing
-	line-height 22px
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-	text-rendering: optimizeLegibility !important;
-	font-smoothing: antialiased !important;
-
-p.alternate
-	color inherit
-	font-size 13px
-	line-height 20px
-	
-a 
-	border-bottom 1px solid black
-	text-decoration none
-	color black
-	cursor pointer
-	
-img
-	width 100%
-	
-
-attribute-list
-	display block
-	color lightgrey
-	cf()
-	
-	> ul
-		margin 0 0 20px 0
-		padding 0
-		list-style none
-		col(1/6, cycle: 6)
-			
-		+below(medium)
-			stack()
+	&:before
+		height 11px
+		top 0
 		
-		> li
-			margin 0 0 4px 0
-			padding 0
-			text-align left
-			font-size 13px
-			
+	&:after
+		height 3px
+		bottom 0
 
+// Responsive Table
+// ----------------------------------------------------------------------------------
 table
 	width 100%
 	margin 40px 0
@@ -209,17 +111,3 @@ td
 		
 		.type-styles &:nth-of-type(7):before 
 			content 'Usage'
-			
-download-nav
-	margin-top 50px
-	margin-bottom 50px
-	display block
-	center()
-	
-	a 
-		@extend p
-		font-weight bold 
-			
-
-
-
