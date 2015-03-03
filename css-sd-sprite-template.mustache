@@ -1,12 +1,5 @@
-/*
-  DO NOT USE IN PRODUCTION
-
-  This is a dirty quick fix for the icon set. In reality, the M&S website
-  needs different sizes. Someone needs to make an icon font. 
-*/
-
 {{#items}}
-${{name}} = {{px.offset_x}} {{px.offset_y}} + 1 {{px.width}} {{px.height}} + 1
+${{name}} = {{px.offset_x}} {{px.offset_y}} {{px.width}} {{px.height}}
 {{/items}}
 
 sprite-width($sprite)
@@ -36,4 +29,17 @@ center-sprite($sprite)
     left 50%
     margin-left -1 * (sprite-width($sprite) / 2)
 
+center-hd-sprite($sprite)
+  position absolute
+  top 10%
+  left 50%
+  margin-left -1 * (sprite-width($sprite) / 2)
+
 {{/sprite}}
+
+{{#items}}
+.icon-swatch.{{name}}
+    @extend .icon
+    sprite(${{name}})
+    center-sprite(${{name}})
+{{/items}}
