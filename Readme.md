@@ -94,7 +94,7 @@ The icons are bas64 encoded into the stylesheet.
 If you need to batch rename a bunch of files to lower case (as I had to with the icons), paste this into terminal
 
 	cd /path/to/files
-	for FILE in `ls -A1 *.png`; do FILENAME=`echo ${FILE} | sed 's/ /\\ /g'`; echo mv ${FILENAME}`echo ${FILENAME} | tr [A-Z] [a-z]`; done
+	for FILE in `ls -A1 *.png`; do FILENAME=`echo ${FILE} | sed 's/ /\\ /g'`; echo mv ${FILENAME} `echo ${FILENAME} | tr [A-Z] [a-z]`; done
 	
 That will give you a list of `mv` commands. If everything looks ok, change `echo mv ${FILENAME}` to `mv ${FILENAME}` and run again. 
 
