@@ -2,31 +2,35 @@
 
 ## Requirements
 - [Git](http://git-scm.com/)
-- [Node.js](http://nodejs.org/) `~0.10.x`
-- Stylus: `npm install stylus -g`
-- Gulp.js: `npm install gulp -g`
+- [Node.js](http://nodejs.org/)
+- Stylus: `sudo npm install stylus -g`
+- Gulp.js: `sudo npm install gulp -g`
 
 ##Getting Started
 
+### Node setup
+This will not build with Node 0.12 or above. Check you Node version by typing the following into the terminal...
+
+	node -v
+
+Ideally, you want `0.11.16` but anything above `0.10.25` (and less than `0.12`) should work. You can easily change you Node version with the `n` npm. 
+
+	sudo npm cache clean -f
+	sudo npm install n -g
+	sudo n 0.11
+	
+It's easy to change Node verisons this way so you've not nuked any other projects that rely on  different Node version. 
+
+### Download, install, build
 	git clone https://github.com/gargantuan/ms_styleguide.git
 	cd ms_styleguide
 	npm install
 	gulp serve
 
-If you get errors, it's most likely a problem with the `glaze` dependency. You'll need to install [Node Version Manager](https://github.com/creationix/nvm) and revert to node 0.10.25
+Unless you're a server admin and hosts.conf whizz, I'd reccomend using:
 
-	curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
-	
-	# Restart terminal
-	
-	source ~/.nvm/nvm.sh
-	nvm install 0.10.25
-	
-	cd ms_styleguide
-	npm install
-	gulp serve
-
-It's easiest to set the `DocumentRoot` for `localhost` to `ms_styleguide/build` to view this project in the browser. If you want somehting more fancy, you'll have to figure it out yourself.
+- [OS X Server](https://itunes.apple.com/gb/app/os-x-server/id883878097) To set up [http://ms-styleguide.dev](http://ms-styleguide.dev) on localhost  
+- [hosts.prefpane](https://github.com/specialunderwear/Hosts.prefpane) to make [http://ms-styleguide.dev](http://ms-styleguide.dev) resolve to localhost.  
 	
 ## Gulp Tasks
 
