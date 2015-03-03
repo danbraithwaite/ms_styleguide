@@ -1,0 +1,26 @@
+/*
+  CSS-Sprite doesn't make the total height.width available outside the {{items}} and {{retina}} directive
+  So we end up with a load of variable assignments here.  
+*/
+
+{{#items}}
+$totalHeight = {{px.total_height}} / 2
+$totalWidth = {{px.total_width}} / 2
+{{/items}}
+
+
+{{#sprite}}
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)
+  {{class}}
+    background-image url('{{{escaped_image}}}')
+    background-size $totalWidth $totalHeight
+{{/sprite}}
+
+
+{{#items}}
+.icon-swatch.{{name}}
+    @extend .icon
+    sprite(${{name}})
+    center-sprite(${{name}})
+
+{{/items}}

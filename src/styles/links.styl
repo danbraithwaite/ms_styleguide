@@ -53,9 +53,17 @@ a.promo-link
 		position absolute
 		right -17px
 		top 2px
-		
 		@extend .icon
-		sprite($arrow-right-small)
+	
+	&.black
+		&:after	
+			sprite($arrow-right-small)
+		
+	&.white
+		color white
+		border white
+		&:after
+			sprite($arrow-right-small-white)
 
 		
 link-list 

@@ -1,6 +1,8 @@
 'use strict';
 
 var gulp = require('gulp');
+var del = require('del');
+var gulpif = require('gulp-if');
 var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
@@ -19,6 +21,10 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var fileInclude = require('gulp-file-include');
 var sprite = require('css-sprite').stream;
+
+gulp.task('clean', function(){
+	del([ './build' ]);
+});
 
 /*
 -----------------------------------------------------------------------------------------------------
@@ -120,19 +126,40 @@ Icons
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('icons', function () {
-	return gulp.src('./src/icons/*.png')
+gulp.task('icons:sd', function () {
+	return gulp.src('./src/icons/sd/*.png')
 		.pipe(sprite({
-			base64: true,
+			out: './build/images',
 			format: 'png',
-			style: 'icons.styl',
+			cssPath: '/images',
+			name: 'icons-sd',
+			style: 'icons-sd.styl',
 			processor: 'stylus',
-			retina: true,
 			margin: 4,
-			template: './css-sprite-template.mustache'
+			template: './css-sd-sprite-template.mustache',
+			sort:false
 	}))
-	.pipe(gulp.dest('./src/styles'))
-	.pipe(reload({stream:true}));
+	.pipe(gulpif('*.png', gulp.dest('./src/images/'), gulp.dest('./src/styles/')));
+});
+
+gulp.task('icons:hd', function () {
+	return gulp.src('./src/icons/hd/*.png')
+		.pipe(sprite({
+			out: './build/images',
+			format: 'png',
+			cssPath: '/images',
+			name: 'icons-hd',
+			style: 'icons-hd.styl',
+			processor: 'stylus',
+			margin: 8,
+			template: './css-hd-sprite-template.mustache',
+			sort:false
+	}))
+	.pipe(gulpif('*.png', gulp.dest('./src/images/'), gulp.dest('./src/styles/')));
+});
+
+gulp.task('icons', ['icons:sd', 'icons:hd'], function(){
+	reload({stream:true});
 });
 
 
@@ -154,10 +181,10 @@ serve - your general purpose dev task. Run once, sit back, and relax!
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('serve', ['browser-sync', 'js', 'html', 'icons', 'styles', 'images', 'fonts'], function () {
+gulp.task('serve', ['clean', 'browser-sync', 'icons', 'js', 'html', 'styles', 'images', 'fonts'], function () {
   gulp.watch(['./src/html/*.html'], ['html']);
   gulp.watch(['./src/styles/**/*.styl'], ['styles']);
   gulp.watch(['./src/images/**/*'], ['images']);
   gulp.watch(['./src/fonts/**/*'], ['fonts']);
-  gulp.watch(['./src/icons/*.png'], ['icons', 'styles']);
+  gulp.watch(['./src/icons/**/*.png'], ['icons', 'styles']);
 });
