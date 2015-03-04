@@ -55,13 +55,15 @@ a.promo-link
 		top 2px
 		@extend .icon
 	
-	&.black
+	&.-dark
+		color black
+		border-color black
 		&:after	
 			sprite($arrow-right-small)
 		
-	&.white
+	&.-light
 		color white
-		border white
+		border-color white
 		&:after
 			sprite($arrow-right-small-white)
 

@@ -1,0 +1,98 @@
+@@include('./partials/html-top.html', {
+	"id": "heroes",
+	"title": "Components - Heros"
+})
+
+
+	<main id="promos-page">
+		
+		<section>
+			<header>
+				<h2>Hero Image</h2>
+				<p>Found on the homepage, department landing pages and occasionally a smaller version on listing pages. Text should fit into the text safe area - which is 50% of the block width.</p>
+			</header>		
+		</section>
+
+		<section>
+			<header>
+				<h4>Full width (home page)</h4>
+				<p>Hero blocks can either be static or a carousel (with arrows on the sides and buttons at the bottom).</p>
+			</header>
+
+			<!--
+				IMPPORTANT NOTE:
+				The required responsoive behaviour would require a level of progressive source ordering
+				that isn't practical. It's possible, but that's how you get legacy code that no one wants
+				to touch ever again. So we'll double up on the promo text and hide/show accordingly. It's
+				bulky, but it's simple. In production, this should probably be done with javascript.
+			-->
+
+			<hero-promo-left>
+				<promo-image-placeholder><!-- BECAUSE WE NEED CSS TO MAKE THIS FUNCTION PROPERLY --></promo-image-placeholder>
+				<promo-copy>
+					<h1>BACK IN BUSINESS</h1>
+					<p>From Monday morning meetings to Friday’s final conference call, stay chic all week with our elegant workwear edit.</p>
+					<promo-cta><a href="#" class="promo-link -dark">Shop now</a></promo-cta>
+				</promo-copy>
+				<promo-copy>
+					<h1>BACK IN BUSINESS</h1>
+					<p>From Monday morning meetings to Friday’s final conference call, stay chic all week with our elegant workwear edit.</p>
+					<promo-cta><a href="#" class="promo-link -light">Shop now</a></promo-cta>
+				</promo-copy>
+			</hero-promo-left>
+			
+
+			<attribute-list>
+				<ul>
+					<li>H1: Didot</li>
+					<li>Font size: 60px</li>
+					<li>Colour: #333333</li>
+				</ul><ul>
+					<li>H4: Helvetica regular</li>
+					<li>Font size: 18px</li>
+					<li>Colour: #333333</li>
+				</ul><ul>
+					<li>H4 CTA: Helvetica medium</li>
+					<li>Colour: #333333</li>
+					<li>Arrow colour: #333333</li>
+					<li>(On hover - underline)</li>
+				</ul>
+			</attribute-list>
+		</section>
+
+	</main>
+
+
+
+<p>BACK IN BUSINESS</p>
+
+<p>From Monday morning meetings to Friday’s final conference call, stay chic all week with our elegant workwear edit.</p>
+
+<p>Shop now</p>
+
+
+
+
+<h3>Mobile</h3>
+
+<p>Hero images are scaled down, keeping the same size ratio. All copy is removed from the image and appears above the image instead.</p>
+
+<h4>Full width - small (DLP)</h4>
+
+<p><strong>COPY INSIDE IMAGE</strong>:</p>
+
+<p>SAVILE ROW INSPIRED</p>
+
+<h4>Department Landing Page</h4>
+
+<p><strong>COPY INSIDE IMAGE</strong>:</p>
+
+<p>STEP INTO SPRING</p>
+
+<p>Make a fresh start for 2015 with statement pieces from our stylish new season collection</p>
+
+<p>Shop new-in clothing</p>
+
+@@include('./partials/html-bottom.html', {
+	"downloadPath": "/downloads/heros.zip"
+})

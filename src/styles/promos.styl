@@ -16,9 +16,7 @@ $hero-promo
 	text-align left
 	background-size cover
 	position relative
-	margin-top 5%
-
-	
+	margin 5% auto 30px
 	
 	promo-image-placeholder
 		display block
@@ -48,38 +46,7 @@ $hero-promo
 				li 
 					margin-right 10px
 					margin-bottom 10px
-
-		&:nth-child(odd)
-			position absolute
-			top 0
-			bottom 0
-			width 40%
-
-			h1
-				text-transform none
-				color #fff
-				
-				+below(1130px)
-					font-size 40px
-					line-height 40px
-					
-				+below(910px)
-					margin-top 20%
-					
-				+below(750px)
-					display none
-			p 
-				color #fff
-				+below(910px)
-					display none
-					
-			promo-cta
-				+below(750px)
-					margin-top 40%
-					
-				+below(682px)
-					display none
-					
+		
 		&:nth-child(even)
 			display block
 			position relative
@@ -101,6 +68,7 @@ $hero-promo
 				color darkgrey
 				
 			+below(910px)
+		
 				p
 					display block
 					border-bottom 1px solid mediumgrey
@@ -121,27 +89,71 @@ $hero-promo
 				h1
 					font-size 28px
 					line-height 28px
+
+		&:nth-child(odd)
+			position absolute
+			top 0
+			bottom 0
+			width 40%
+
+			h1
+				text-transform none
+				color #fff
+				
+				+below(1130px)
+					margin-top 100px
+					font-size 40px
+					line-height 40px
+					
+				+below(910px)
+					margin-top 20%
+					
+				+below(750px)
+					display none
+			p 
+				color #fff
+				+below(910px)
+					display none
+					
+			promo-cta
+				+below(750px)
+					margin-top 40%
+					
+				+below(682px)
+					display none
+				
 					
 					
 // ---------------------------------------------------------
 
 hero-promo-right
-	@extend $hero-promo
-	promo-image-placeholder
-		background-image url(/images/promo-1.jpg)
-		+below(682)
-			background-position center left
-	
-	promo-copy
-		left 55%
-	
-hero-promo-left
-	@extend $hero-promo
-	promo-image-placeholder
-		background-image url(/images/promo-2.jpg)
-		+below(682)
-			background-position center right	
+		@extend $hero-promo		
+		promo-copy
+			left 55%
 		
-	promo-copy
-		left 5%
+	hero-promo-left
+		@extend $hero-promo
+		promo-copy
+			left 5%
+
+#promos
+	hero-promo-right
+		promo-image-placeholder
+			background-image url(/images/promo-1.jpg)
+			+below(682)
+				background-position center left
+		
+	hero-promo-left
+		promo-image-placeholder
+			background-image url(/images/promo-2.jpg)
+			+below(682)
+				background-position center right	
+		
+
+#heroes
+	hero-promo-left
+		promo-image-placeholder
+			background-image url(/images/hero-full-width.jpg)
+			+below(682)
+				background-position center right	
 	
