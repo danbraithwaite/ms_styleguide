@@ -2,8 +2,9 @@
 
 var gulp = require('gulp');
 var del = require('del');
-var gulpif = require('gulp-if');
+var cache = require('gulp-cache');
 var gutil = require('gulp-util');
+//var gulpif = require('gulp-if');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -22,7 +23,11 @@ var pngquant = require('imagemin-pngquant');
 var fileInclude = require('gulp-file-include');
 var sprite = require('css-sprite').stream;
 
-gulp.task('clean', function(){
+gulp.task('clear', function (done) {
+  return cache.clearAll(done);
+});
+
+gulp.task('clean', ['clear'], function(){
 	del([ './build' ]);
 });
 
@@ -126,42 +131,19 @@ Icons
 -----------------------------------------------------------------------------------------------------
 */
 
-gulp.task('icons:sd', function () {
-	return gulp.src('./src/icons/sd/*.png')
-		.pipe(sprite({
-			out: './build/images',
-			format: 'png',
-			cssPath: '/images',
-			name: 'icons-sd',
-			style: 'icons-sd.styl',
-			processor: 'stylus',
-			margin: 4,
-			template: './css-sd-sprite-template.mustache',
-			sort:false
-	}))
-	.pipe(gulpif('*.png', gulp.dest('./src/images/'), gulp.dest('./src/styles/')));
-});
-
-gulp.task('icons:hd', function () {
+gulp.task('icons', function () {
 	return gulp.src('./src/icons/hd/*.png')
 		.pipe(sprite({
-			out: './build/images',
-			format: 'png',
-			cssPath: '/images',
-			name: 'icons-hd',
-			style: 'icons-hd.styl',
-			processor: 'stylus',
+			base64: true,
+			retina: true,
 			margin: 8,
-			template: './css-hd-sprite-template.mustache',
-			sort:false
+			template: './icon-template.mustache',
+			style: 'icons.styl',
+			sort: false
 	}))
-	.pipe(gulpif('*.png', gulp.dest('./src/images/'), gulp.dest('./src/styles/')));
+	.pipe(gulp.dest('./src/styles/'))
+	.pipe(reload({stream:true}));
 });
-
-gulp.task('icons', ['icons:sd', 'icons:hd'], function(){
-	reload({stream:true});
-});
-
 
 /*
 -----------------------------------------------------------------------------------------------------

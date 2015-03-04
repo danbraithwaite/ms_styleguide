@@ -19,23 +19,25 @@ sprite($sprite)
   sprite-width($sprite)
   sprite-height($sprite)
 
+center-sprite($sprite)
+    position absolute
+    top 20px
+    left 50%
+    margin-left -1 * (sprite-width($sprite) / 2)
+
 {{#sprite}}
 {{class}}
   background-image url('{{{escaped_image}}}')
 
-center-sprite($sprite)
-    position absolute
-    top 20%
-    left 50%
-    margin-left -1 * (sprite-width($sprite) / 2)
-
-center-hd-sprite($sprite)
-  position absolute
-  top 10%
-  left 50%
-  margin-left -1 * (sprite-width($sprite) / 2)
 
 {{/sprite}}
+{{#retina}}
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)
+  {{class}}
+    background-image url('{{{escaped_image}}}')
+    background-size {{px.total_width}} {{px.total_height}}
+
+{{/retina}}
 
 {{#items}}
 .icon-swatch.{{name}}
