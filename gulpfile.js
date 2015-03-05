@@ -139,7 +139,8 @@ gulp.task('icons', function () {
 			margin: 8,
 			template: './icon-template.mustache',
 			style: 'icons.styl',
-			sort: false
+			sort: false,
+			interpolation: 'moving-average'
 	}))
 	.pipe(gulp.dest('./src/styles/'))
 	.pipe(reload({stream:true}));
