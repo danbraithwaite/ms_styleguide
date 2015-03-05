@@ -88,6 +88,9 @@ This project uses Stylus is the CSS preprocessor. In addition, it uses [Jeet](ht
 
 ###Icons
 
+##### Impotant
+The `css-sprite` package that handles resizing the retina icons to standard definition defaults to an interpolation alogrith that results is janky looking sprites. There's a pending pull request that [fixes this issue here](https://github.com/aslansky/css-sprite/pull/52). If it's not been merged by the time you read this, here's the [patch](https://github.com/aslansky/css-sprite/pull/52.patch)
+
 To generate icons, simply add new icon images to the `icons` folder and run the `gulp icons` task.
 
 The images should be at retina resolution since the gulp task takes care of genertating standard-def sprites. 
