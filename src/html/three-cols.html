@@ -10,7 +10,11 @@
 			<header>
 				<h2>3 Col Block</h2>
 				<p>Usually found on the department landing pages (DLP) or content landing pages (CLP). The height for these blocks should be fairly flexible - depending on content type.</p>
-			</header>	
+			</header>
+
+			<code-names>
+				<code-name>3col.img</code-name>
+			</code-names>	
 		</section>
 
 		<three-column-block>
@@ -46,5 +50,18 @@
 			</section>
 
 		</three-column-block>
+		
+		<section>
+			<header>
+				<h4>Mobile</h4>
+				<p>On mobile, the 3 columns stack on top of each other (turning into 1col) and scale down to fit inside the device with 10px padding either side.</p>
+			</header>
+			<img class="mobile-preview" src="/images/three-cols/Mobile-1.jpg" alt="Mobile Preview">
+
+		</section>
 
 	</main>
+
+@@include('./partials/html-bottom.html', {
+	"downloadPath": "/downloads/three-cols.zip"
+})
