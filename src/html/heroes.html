@@ -1,0 +1,125 @@
+	@@include('./partials/html-top.html', {
+	"id": "heroes",
+	"title": "Components - Heros"
+})
+
+
+	<main id="promos-page">
+		
+		<section>
+			<header>
+				<h2>Hero Image</h2>
+				<p>Found on the homepage, department landing pages and occasionally a smaller version on listing pages. Text should fit into the text safe area - which is 50% of the block width.</p>
+			</header>		
+		</section>
+
+		<section>
+			<header>
+				<h4>Full width (home page)</h4>
+				<code-names>
+					<code-name>fw.hero.static</code-name>
+					<code-name>fw.hero.carousel</code-name>	
+				</code-names>
+				<p>Hero blocks can either be static or a carousel (with arrows on the sides and buttons at the bottom).</p>
+			</header>
+
+			<!--
+				IMPPORTANT NOTE:
+				The required responsoive behaviour would require a level of progressive source ordering
+				that isn't practical. It's possible, but that's how you get legacy code that no one wants
+				to touch ever again. So we'll double up on the promo text and hide/show accordingly. It's
+				bulky, but it's simple. In production, this should probably be done with javascript.
+			-->
+
+			<hero-promo-left class="-light">
+				<promo-image-placeholder><!-- BECAUSE WE NEED CSS TO MAKE THIS FUNCTION PROPERLY --></promo-image-placeholder>
+				<promo-copy>
+					<h1>BACK IN BUSINESS</h1>
+					<p>From Monday morning meetings to Friday’s final conference call, stay chic all week with our elegant workwear edit.</p>
+					<promo-cta><a href="#" class="promo-link -dark">Shop now</a></promo-cta>
+				</promo-copy>
+				<promo-copy>
+					<h1>BACK IN BUSINESS</h1>
+					<p>From Monday morning meetings to Friday’s final conference call, stay chic all week with our elegant workwear edit.</p>
+					<promo-cta><a href="#" class="promo-link -light">Shop now</a></promo-cta>
+				</promo-copy>
+
+				<nav data-role="pagination">
+					<a href="#" alt="Image 1">One</a>
+					<a href="#" alt="Image 2">Two</a>
+					<a href="#" alt="Image 3">Three</a>
+				</nav>
+			</hero-promo-left>
+			
+
+			<attribute-list>
+				<ul>
+					<li>H1: Didot</li>
+					<li>Font size: 60px</li>
+					<li>Colour: #333333</li>
+				</ul><ul>
+					<li>H4: Helvetica regular</li>
+					<li>Font size: 18px</li>
+					<li>Colour: #333333</li>
+				</ul><ul>
+					<li>H4 CTA: Helvetica medium</li>
+					<li>Colour: #333333</li>
+					<li>Arrow colour: #333333</li>
+					<li>(On hover - underline)</li>
+				</ul>
+			</attribute-list>
+		</section>
+
+		<section>
+			<header>
+				<hz>Mobile</h3>
+				<p>Hero images are scaled down, keeping the same size ratio. All copy is removed from the image and appears above the image instead.</p>
+
+				<img class="mobile-preview" src="/images/hero-mobile-1.jpg" alt="Hero 1 at mobile">
+			</header>
+		</section>
+
+		<section>
+			<header>
+				<h4>Full width - small (DLP)</h4>
+				<code-names>
+					<code-name>fw.hero.sml</code-name>
+				</code-names>
+			</header>
+			
+			<small-promo-left class="-light">
+				<promo-image-placeholder><!-- BECAUSE WE NEED CSS TO MAKE THIS FUNCTION PROPERLY --></promo-image-placeholder>
+				<promo-copy>
+					<h1>SAVILE ROW INSPIRED</h1>
+				</promo-copy>
+			</small-promo-left>
+		
+		</section>
+
+		<section>
+			<header>
+				<h4>Department Landing Page</h4>
+				<code-names>
+					<code-name>dlp.hero</code-name>
+				</code-names>	
+			</header>
+
+			<department-hero-promo-left class="-light">
+				<promo-image-placeholder><!-- BECAUSE WE NEED CSS TO MAKE THIS FUNCTION PROPERLY --></promo-image-placeholder>
+				<promo-copy>
+					<h1>STEP INTO SPRING</h1>
+					<p>Make a fresh start for 2015 with statement pieces from our stylish new season collection</p>
+					<promo-cta><a href="#" class="promo-link">Shop new-in clothing</a></promo-cta>
+				</promo-copy>
+				<promo-copy>
+					<h1>STEP INTO SPRING</h1>
+					<p>Make a fresh start for 2015 with statement pieces from our stylish new season collection</p>
+					<promo-cta><a href="#" class="promo-link">Shop new-in clothing</a></promo-cta>
+				</promo-copy>
+			<department-hero-promo-left>
+		</section>
+	</main>
+
+@@include('./partials/html-bottom.html', {
+	"downloadPath": "/downloads/heros.zip"
+})

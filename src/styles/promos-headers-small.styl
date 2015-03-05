@@ -1,0 +1,58 @@
+$aspectRatio = 19.7%
+
+
+$small-hero-promo
+	center(1200px)
+	text-align left
+	position relative
+	margin 5% auto 30px
+	display block
+	
+	&.-dark
+		color darkgrey
+		
+	&.-light
+		color white
+	
+	promo-image-placeholder
+		display block
+		position absolute
+		top 0
+		left 0
+		right 0
+		padding-bottom $aspectRatio
+		height $aspectRatio
+		background-size cover
+		
+		+below(682px)
+			padding-bottom $aspectRatio * 2
+			
+		+below(550px)
+			position relative
+			margin-bottom 32px
+		
+	promo-copy
+		display block
+		position relative
+		width 45%
+		top 0
+		left 0
+		
+		+below(550px)
+			width 90%
+			color darkgrey
+			
+			h1 
+				margin 0 0 0 0
+			
+// ---------------------------------------------------------
+
+small-promo-right
+		@extend $small-hero-promo		
+		promo-copy
+			left 55%
+		
+small-promo-left
+	@extend $small-hero-promo
+	promo-copy
+		left 5%
