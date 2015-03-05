@@ -19,7 +19,7 @@ Ideally, you want `0.11.16` but anything above `0.10.25` (and less than `0.12`) 
 	sudo npm install n -g
 	sudo n 0.11
 	
-It's easy to change Node verisons this way so you've not nuked any other projects that rely on  different Node version. 
+It's easy to change Node verisons this way so you've not nuked any other projects that rely on a different Node version. 
 
 ### Download, install, build
 	git clone https://github.com/gargantuan/ms_styleguide.git
@@ -82,6 +82,10 @@ However, only use this where it makes sense. You'll notice that the `color-swatc
 	
 It's a judgement call. To be fair, this kind of broke down at the later stages and calls for a refactor. 
 
+###CSS/Stylus
+This project uses Stylus is the CSS preprocessor. In addition, it uses [Jeet](http://jeet.gs/) for grid framework and [Rupture](https://github.com/jenius/rupture) for the media queries.
+
+
 ###Icons
 
 To generate icons, simply add new icon images to the `icons` folder and run the `gulp icons` task.
@@ -91,7 +95,7 @@ The images should be at retina resolution since the gulp task takes care of gene
 The icons are bas64 encoded into the stylesheet.
 
 #### Batch renaming icon files
-If you need to batch rename a bunch of files to lower case (as I had to with the icons), paste this into terminal
+If you need to batch rename a bunch of files to lower case (typically icon files), paste this into terminal
 
 	cd /path/to/files
 	for FILE in `ls -A1 *.png`; do FILENAME=`echo ${FILE} | sed 's/ /\\ /g'`; echo mv ${FILENAME} `echo ${FILENAME} | tr [A-Z] [a-z]`; done
