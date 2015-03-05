@@ -42,6 +42,9 @@ a.icon-link
 		&:before
 			sprite($download-small)	
 
+/* 
+	this is tightly coupled to the promo-headers
+*/
 a.promo-link
 	position relative
 	font-size 18px
@@ -55,18 +58,22 @@ a.promo-link
 		top 2px
 		@extend .icon
 	
-	&.-dark
+	.-dark &
 		color black
 		border none
 		&:after	
 			sprite($arrow-right-small)
-		
-	&.-light
+			
+	.-light &
 		color white
 		border none
 		&:after
 			sprite($arrow-right-small-white)
-
+			
+		+below(small)
+			color black
+			&:after	
+				sprite($arrow-right-small)
 		
 link-list 
 	a 
