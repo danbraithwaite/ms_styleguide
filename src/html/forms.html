@@ -12,7 +12,7 @@
 		</header>
 	</section>
 
-	<modal-view data-role="sign-in">
+	<section>
 		<h3>Sign In</h3>
 		<p>Please sign into your M&amp;S account. If you don't have an account you can <b><a href="#">Create one now</a></b>.</p>
 		<form>
@@ -30,8 +30,8 @@
 				<button>Sign in</button>
 			</p>
 		</form>
-		<button data-role="close-button">close</button>
-	</modal-view>
+	</section>
+
 
 	<section>
 		<header>
@@ -39,137 +39,63 @@
 		</header>
 	</section>
 
-			<modal-view data-role="register">
-				<h3>Create an account</h3>
-				<form>
-					<label>
-						Title
-						<select name="title" id="">
-							<option value="select" disabled selected>Please select</option>
-							<option value="mr">Mr</option>
-							<option value="mrs">Mrs</option>
-							<option value="ms">Ms</option>
-							<option value="miss">Miss</option>
-							<option value="dr">Doctor</option>
-							<option value="lord">Lord</option>
-						</select>
-					</label>
-					<label>
-						First name
-						<input type="text" placeholder="John">
-					</label>
-					<label>
-						Last name
-						<input type="text" placeholder="smith">
-					</label>
-					<label>
-						Email
-						<input type="email" placeholder="john.smith@gmail.com">
-					</label>
-					<label>
-						Password
-						<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
-					</label>
-					<label>
-						Retype your password
-						<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
-						<input-note>Minimum of 8 characters, using both letters &amp; numbers</input-note>
-					</label>
+		<form method="get" action="javasript: return false">
+			<h3>Register</h3>
+			<label>
+				Title
+				<select name="title" id="">
+					<option value="select" disabled selected>Please select</option>
+					<option value="mr">Mr</option>
+					<option value="mrs">Mrs</option>
+					<option value="ms">Ms</option>
+					<option value="miss">Miss</option>
+					<option value="dr">Doctor</option>
+					<option value="lord">Lord</option>
+				</select>
+			</label>
+			<label>
+				First name
+				<input type="text" placeholder="John">
+			</label>
+			<label>
+				Last name
+				<input type="text" placeholder="smith">
+			</label>
+			<label>
+				Email
+				<input type="email" placeholder="john.smith@gmail.com">
+			</label>
+			<label>
+				Password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+			</label>
+			<label>
+				Retype your password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+				<input-note>Minimum of 8 characters, using both letters &amp; numbers</input-note>
+			</label>
 
-					<label>
-						Phone number (Optional)
-						<input type="text" placeholder="1123 581 321">
-					</label>
-					
-					<p>Please tick the boxes below if you do not wish to recieve updates from us by email and/or text relating to Marks &amp; Spencers products and services</p>
-					
-					<checkbox-group>
-						<label><input type="checkbox" checked> <span>I do NOT want to recieve email updates</span></label>
-						<label><input type="checkbox"> <span>I do NOT want to recieve text updates</span></label>
-					</checkbox-group>
+			<label>
+				Phone number (Optional)
+				<input type="text" placeholder="1123 581 321">
+			</label>
+			
+			<p>Please tick the boxes below if you do not wish to recieve updates from us by email and/or text relating to Marks &amp; Spencers products and services</p>
+			
+			<checkbox-group>
+				<label><input type="checkbox" checked> <span>I do NOT want to recieve email updates</span></label>
+				<label><input type="checkbox"> <span>I do NOT want to recieve text updates</span></label>
+			</checkbox-group>
 
-					<p class="alternate">By clicking 'Create an account' you agree to cookies being used in accordance with our <a href="#">Cookie Policy</a> and to recieve updates from us, by email and text message, unless you have ticked the relevant boxes above. You can disable cookies at any time - see our <a href="#">Cookie Policy</a> for details</p>
-				
-					<p class="alternate">Your personal details are safe with us. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
-					
-					<button>Create an Account</button>
-
-				</form>
-				
-
-				<button data-role="close-button">close</button>
-			</modal-view>
-
+			<p class="alternate">By clicking 'Create an account' you agree to cookies being used in accordance with our <a href="#">Cookie Policy</a> and to recieve updates from us, by email and text message, unless you have ticked the relevant boxes above. You can disable cookies at any time - see our <a href="#">Cookie Policy</a> for details</p>
 		
-		<section>
-			<h1>M&amp;S_UI_Styleguide_Module_Forms</h1>
+			<p class="alternate">Your personal details are safe with us. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
+			
+			<button>Create an Account</button>
 
-			<h2>Forms</h2>
-
-			<p>Examples of how form elements can be placed together to create a form, whether it’s for sign in/register or checkout. All forms should follow the same styling and rules. Specific form element rules can be found in their component page.</p>
-
-			<h4>Sign In</h4>
-
-			<p>Sign in includes a H2 heading, optional body copy (1 sentence only), 2 fields, CTA and option to create an account. Form width isn’t fixed, it should change depending on context and the amount of space you have to work with.</p>
-
-			<p>—————</p>
-
-			<p>Sign In</p>
-
-			<p>To join Sparks, sign in or create an M&amp;S account</p>
-
-			<p>Email
-			Password</p>
-
-			<p>Don’t have an account?
-			Register</p>
-
-			<h4>Register</h4>
-
-			<p>Register in includes a H2 heading, optional body copy (1 sentence only), multiple fields (incl dropdowns and checkboxes), CTA and option to sign in. Form width isn’t fixed, it should change depending on context and the amount of space you have to work with.</p>
-
-			<p>—————</p>
-
-			<p>Register</p>
-
-			<p>To join Sparks, sign in or create an M&amp;S account</p>
-
-			<p>Title
-			First name
-			Last name
-			Email
-			Phone number
-			Password
-			Retype Password</p>
-
-			<p>I do NOT want email updates
-			I do NOT want text updates</p>
-
-			<p>I accept the NEW M&amp;S Terms and Conditions</p>
-
-			<p>Already have an account?
-			Sign in</p>
-
-			<h4>Modal form</h4>
-
-			<p>When putting forms inside modal boxes, try to split the information into different sections to avoid having a modal window that goes beyond the viewport.</p>
-
-			<p>—————</p>
-
-			<p>Add a delivery address</p>
-
-			<p>Title
-			First name
-			Last name
-			Phone number</p>
-
-			<p>Select Country
-			House number/name
-			Post code
-			Address name (e.g. Work, Home)
-			Enter address manually or enter a BFPO Address</p>
-		</section>
-
+		</form>
+				
+	
 	</main>
 
 @@include('./partials/html-bottom.html', {
