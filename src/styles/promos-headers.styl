@@ -141,6 +141,11 @@ $hero-promo
 		right 0	
 		text-align center
 		letter-spacing 10px
+		
+		+below(910px)
+			margin 10px auto
+			position relative
+
 		a
 			font-size 0
 			width 20px
@@ -151,6 +156,12 @@ $hero-promo
 			
 			&:nth-child(even)
 				background-color black
+			
+			&:nth-child(odd)
+				+below(910px)
+					background-color lightgrey
+				
+
 						
 					
 // ---------------------------------------------------------

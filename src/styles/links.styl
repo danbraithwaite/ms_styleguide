@@ -28,6 +28,7 @@ a.icon-link
 		display block
 		content ''
 		left $icon-offset * -1
+		top 5px
 
 	&.delivery:before
 		sprite($delivery-small)	
@@ -70,7 +71,7 @@ a.promo-link
 		&:after
 			sprite($arrow-right-small-white)
 			
-		+below(small)
+		+below(682px)
 			color black
 			&:after	
 				sprite($arrow-right-small)
