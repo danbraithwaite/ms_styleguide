@@ -55,8 +55,6 @@ Running `gulp serve` should be the only gulp task you need to run. However, the 
 
 This project uses [Jeet](http://www.jeet.gs) for the responsive grid. 
 
-### Deployment
-Running `gulp deploy` will create a deployment build with compressed source files.
 
 ### PSD Downloads
 I've not included the downloadable PSDs in the git repo because they're too big. You'll need to source these from else where (Dan Brathwaite most likely). 
