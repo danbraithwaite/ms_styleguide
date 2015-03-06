@@ -154,7 +154,7 @@ broswser-sync
 
 gulp.task('browser-sync', function() {
     browserSync({
-        proxy: 'ms-styleguide.dev'
+        proxy: 'localhost'
     });
 });
 
