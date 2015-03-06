@@ -7,9 +7,10 @@
 - Gulp.js: `sudo npm install gulp -g`
 
 ##Getting Started
+Forgive the verbosity - this is written for non-developers too. 
 
 ### Node setup
-This will not build with Node 0.12 or above. Check you Node version by typing the following into the terminal...
+This will not build with Node 0.12 or above. Check your Node version by typing the following into the terminal...
 
 	node -v
 
@@ -34,7 +35,7 @@ It's easy to change Node verisons this way so you've not nuked any other project
       Error: ENOENT, stat '~/Development/MS_Styleguide/build/fonts/00a50b07-c2e0-458a-9958-26d6b05d0d8e.woff'
     at Error (native)
       
-#####Just call `gulp serve` a second time and it should work. I've not had chance to diagnose it yet.
+#####Just call `gulp serve` a second time and it should work. I've not had chance to diagnose it yet. If you're having any other troubles with the build process, [email me](mailto: him@tomelders.com)
 
 Unless you're a server admin and hosts.conf whizz, I'd reccomend using:
 
@@ -44,7 +45,6 @@ Unless you're a server admin and hosts.conf whizz, I'd reccomend using:
 ## Gulp Tasks
 
 - `gulp serve` - Build and serve the app with live reload
-- `gulp deploy` - Create a deployment build
 - `gulp html` - Build the HTML files
 - `gulp icons` - Precoess the icon files and generate the stylus file
 - `gulp images` - Process and optimize image files
