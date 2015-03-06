@@ -18,7 +18,7 @@ button($color)
 	background-color $color
 	user-select none
 	cursor pointer
-	height 45px
+	height 40px
 	font-size 15px
 	
 	white-space nowrap
@@ -37,7 +37,7 @@ button($color)
 		background-color primaryCtaPressColor
 		
 	&:disabled
-		background-color backgroundgrey
+		background-color buttonBgDisabled
 		color lightgrey
 		cursor no-drop
 		
@@ -58,8 +58,8 @@ button($color)
 			border-color darkgrey
 			
 		&:disabled
-			background-color backgroundgrey
-			border-color backgroundgrey
+			background-color buttonBgDisabled
+			border-color buttonBgDisabled
 			color lightgrey
 			cursor no-drop
 		
@@ -79,8 +79,8 @@ button($color)
 			
 		&:disabled
 			color lightgrey
-			background-color backgroundgrey
-			border-color backgroundgrey
+			background-color buttonBgDisabled
+			border-color buttonBgDisabled
 			cursor no-drop
 			
 	&[data-role=checkout-button]
@@ -96,7 +96,7 @@ icon-button
 	color darkgrey
 	border 3px solid lightgrey
 	padding-left 45px
-	line-height 42px
+	line-height 36px
 	
 	&:before
 		@extend .icon
@@ -105,7 +105,7 @@ icon-button
 		position absolute
 		display block
 		content ''
-		top 10px
+		top 9px
 		left 18px
 		
 // -----------------------------------------------------		
@@ -118,6 +118,7 @@ tab-button-group
 	border 3px solid black
 	line-height 40px
 	width 70%
+	font-size 15px
 	
 	
 	> label

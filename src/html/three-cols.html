@@ -1,0 +1,67 @@
+@@include('./partials/html-top.html', {
+	"id": "three-cols",
+	"title": "Modules - 3 Cols"
+})
+
+
+	<main>
+		
+		<section>
+			<header>
+				<h2>3 Col Block</h2>
+				<p>Usually found on the department landing pages (DLP) or content landing pages (CLP). The height for these blocks should be fairly flexible - depending on content type.</p>
+				<code-names>
+					<code-name>3col.img</code-name>
+				</code-names>	
+			</header>
+
+		</section>
+
+		<three-column-block>
+			<section>
+				<img src="/images/three-cols/3col-1@2x.jpg" alt="Fish and meat">
+				<p><strong>Fish, Meat &amp; Poultry</strong></p>
+
+				<p>Now’s the time to enjoy our exclusive
+				Lochmuir salmon</p>
+
+				<p><a href="#" onclick="javascript: return false;">Find your nearest store</a></p>
+			</section>
+			
+			<section>
+				<img src="/images/three-cols/3col-2@2x.jpg" alt="Delicious Vegetables">
+				<p><strong>Delicious Vegetables</strong></p>
+
+				<p>Try our organic vegetables, direct from the
+				farm to you.</p>
+
+				<p><a href="#" onclick="javascript: return false;">Find your nearest store</a></p>
+			</section>
+			
+			<section>
+				<img src="/images/three-cols/3col-3@2x.jpg" alt="Spreads and Jams">
+				<p><strong>Spreads and Jams</strong></p>
+
+				<p>Specially crafted spreads and jams,
+				perfect for the home or as a gift.</p>
+
+				<p><a href="#" onclick="javascript: return false;">Find your nearest store</a></p>
+
+			</section>
+
+		</three-column-block>
+		
+		<section>
+			<header>
+				<h4><b>Mobile</b></h4>
+				<p>On mobile, the 3 columns stack on top of each other (turning into 1col) and scale down to fit inside the device with 10px padding either side.</p>
+			</header>
+			<img class="mobile-preview" src="/images/three-cols/Mobile-1.jpg" alt="Mobile Preview">
+
+		</section>
+
+	</main>
+
+@@include('./partials/html-bottom.html', {
+	"downloadPath": "/downloads/three-cols.zip"
+})

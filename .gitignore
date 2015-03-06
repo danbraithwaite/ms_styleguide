@@ -4,6 +4,7 @@
 *.psd
 *.ai
 logs
+*.zip
 pids
 lib-cov
 coverage

@@ -7,9 +7,10 @@
 - Gulp.js: `sudo npm install gulp -g`
 
 ##Getting Started
+Forgive the verbosity - this is written for non-developers too. 
 
 ### Node setup
-This will not build with Node 0.12 or above. Check you Node version by typing the following into the terminal...
+This will not build with Node 0.12 or above. Check your Node version by typing the following into the terminal...
 
 	node -v
 
@@ -19,13 +20,22 @@ Ideally, you want `0.11.16` but anything above `0.10.25` (and less than `0.12`) 
 	sudo npm install n -g
 	sudo n 0.11
 	
-It's easy to change Node verisons this way so you've not nuked any other projects that rely on  different Node version. 
+It's easy to change Node verisons this way so you've not nuked any other projects that rely on a different Node version. 
 
 ### Download, install, build
 	git clone https://github.com/gargantuan/ms_styleguide.git
 	cd ms_styleguide
 	npm install
 	gulp serve
+	
+#####Note: There's something wrong with the build process at the moment. If you get an error like this...
+
+	stream.js:94
+      throw er; // Unhandled stream error in pipe.
+      Error: ENOENT, stat '~/Development/MS_Styleguide/build/fonts/00a50b07-c2e0-458a-9958-26d6b05d0d8e.woff'
+    at Error (native)
+      
+#####Just call `gulp serve` a second time and it should work. I've not had chance to diagnose it yet. If you're having any other troubles with the build process, [email me](mailto: him@tomelders.com)
 
 Unless you're a server admin and hosts.conf whizz, I'd reccomend using:
 
@@ -35,7 +45,6 @@ Unless you're a server admin and hosts.conf whizz, I'd reccomend using:
 ## Gulp Tasks
 
 - `gulp serve` - Build and serve the app with live reload
-- `gulp deploy` - Create a deployment build
 - `gulp html` - Build the HTML files
 - `gulp icons` - Precoess the icon files and generate the stylus file
 - `gulp images` - Process and optimize image files
@@ -46,8 +55,6 @@ Running `gulp serve` should be the only gulp task you need to run. However, the 
 
 This project uses [Jeet](http://www.jeet.gs) for the responsive grid. 
 
-### Deployment
-Running `gulp deploy` will create a deployment build with compressed source files.
 
 ### PSD Downloads
 I've not included the downloadable PSDs in the git repo because they're too big. You'll need to source these from else where (Dan Brathwaite most likely). 
@@ -82,7 +89,14 @@ However, only use this where it makes sense. You'll notice that the `color-swatc
 	
 It's a judgement call. To be fair, this kind of broke down at the later stages and calls for a refactor. 
 
+###CSS/Stylus
+This project uses Stylus is the CSS preprocessor. In addition, it uses [Jeet](http://jeet.gs/) for grid framework and [Rupture](https://github.com/jenius/rupture) for the media queries.
+
+
 ###Icons
+
+##### Impotant
+The `css-sprite` package that handles resizing the retina icons to standard definition defaults to an interpolation alogrith that results is janky looking sprites. There's a pending pull request that [fixes this issue here](https://github.com/aslansky/css-sprite/pull/52). If it's not been merged by the time you read this, here's the [patch](https://github.com/aslansky/css-sprite/pull/52.patch)
 
 To generate icons, simply add new icon images to the `icons` folder and run the `gulp icons` task.
 
@@ -91,7 +105,7 @@ The images should be at retina resolution since the gulp task takes care of gene
 The icons are bas64 encoded into the stylesheet.
 
 #### Batch renaming icon files
-If you need to batch rename a bunch of files to lower case (as I had to with the icons), paste this into terminal
+If you need to batch rename a bunch of files to lower case (typically icon files), paste this into terminal
 
 	cd /path/to/files
 	for FILE in `ls -A1 *.png`; do FILENAME=`echo ${FILE} | sed 's/ /\\ /g'`; echo mv ${FILENAME} `echo ${FILENAME} | tr [A-Z] [a-z]`; done

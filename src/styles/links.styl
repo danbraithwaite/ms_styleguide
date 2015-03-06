@@ -28,6 +28,7 @@ a.icon-link
 		display block
 		content ''
 		left $icon-offset * -1
+		top 5px
 
 	&.delivery:before
 		sprite($delivery-small)	
@@ -42,6 +43,9 @@ a.icon-link
 		&:before
 			sprite($download-small)	
 
+/* 
+	this is tightly coupled to the promo-headers
+*/
 a.promo-link
 	position relative
 	font-size 18px
@@ -55,16 +59,22 @@ a.promo-link
 		top 2px
 		@extend .icon
 	
-	&.black
+	.-dark &
+		color black
+		border none
 		&:after	
 			sprite($arrow-right-small)
-		
-	&.white
+			
+	.-light &
 		color white
-		border white
+		border none
 		&:after
 			sprite($arrow-right-small-white)
-
+			
+		+below(682px)
+			color black
+			&:after	
+				sprite($arrow-right-small)
 		
 link-list 
 	a 

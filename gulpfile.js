@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var del = require('del');
 var cache = require('gulp-cache');
 var gutil = require('gulp-util');
-//var gulpif = require('gulp-if');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -139,7 +138,8 @@ gulp.task('icons', function () {
 			margin: 8,
 			template: './icon-template.mustache',
 			style: 'icons.styl',
-			sort: false
+			sort: false,
+			interpolation: 'moving-average'
 	}))
 	.pipe(gulp.dest('./src/styles/'))
 	.pipe(reload({stream:true}));
@@ -153,7 +153,7 @@ broswser-sync
 
 gulp.task('browser-sync', function() {
     browserSync({
-        proxy: 'ms-styleguide.dev'
+        proxy: 'localhost'
     });
 });
 
