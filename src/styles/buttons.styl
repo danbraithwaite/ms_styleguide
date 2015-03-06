@@ -37,7 +37,7 @@ button($color)
 		background-color primaryCtaPressColor
 		
 	&:disabled
-		background-color backgroundgrey
+		background-color buttonBgDisabled
 		color lightgrey
 		cursor no-drop
 		
@@ -58,8 +58,8 @@ button($color)
 			border-color darkgrey
 			
 		&:disabled
-			background-color backgroundgrey
-			border-color backgroundgrey
+			background-color buttonBgDisabled
+			border-color buttonBgDisabled
 			color lightgrey
 			cursor no-drop
 		
@@ -79,8 +79,8 @@ button($color)
 			
 		&:disabled
 			color lightgrey
-			background-color backgroundgrey
-			border-color backgroundgrey
+			background-color buttonBgDisabled
+			border-color buttonBgDisabled
 			cursor no-drop
 			
 	&[data-role=checkout-button]
@@ -118,6 +118,7 @@ tab-button-group
 	border 3px solid black
 	line-height 40px
 	width 70%
+	font-size 15px
 	
 	
 	> label
