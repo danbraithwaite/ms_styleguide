@@ -1,0 +1,13 @@
+video-example
+	
+	display block
+	position relative
+	
+	&:after
+		content ''
+		display block
+		@extend .icon
+		sprite($play-big)
+		position absolute
+		center-sprite($play-big)
+		top 45%
