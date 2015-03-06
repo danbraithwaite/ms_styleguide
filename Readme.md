@@ -26,6 +26,15 @@ It's easy to change Node verisons this way so you've not nuked any other project
 	cd ms_styleguide
 	npm install
 	gulp serve
+	
+#####Note: There's something wrong with the build process at the moment. If you get an error like this...
+
+	stream.js:94
+      throw er; // Unhandled stream error in pipe.
+      Error: ENOENT, stat '~/Development/MS_Styleguide/build/fonts/00a50b07-c2e0-458a-9958-26d6b05d0d8e.woff'
+    at Error (native)
+      
+#####Just call `gulp serve` a second time and it should work. I've not had chance to diagnose it yet.
 
 Unless you're a server admin and hosts.conf whizz, I'd reccomend using:
 
