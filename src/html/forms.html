@@ -1,0 +1,103 @@
+@@include('./partials/html-top.html', {
+	"id": "forms",
+	"title": "Modules - Forms"
+})
+
+
+	<main>
+
+		<section>
+		<header>
+			<h4>Sign in</h4>
+		</header>
+	</section>
+
+	<section>
+		<h3>Sign In</h3>
+		<p>Please sign into your M&amp;S account. If you don't have an account you can <b><a href="#">Create one now</a></b>.</p>
+		<form>
+			<label>
+				Email
+				<input type="text" placeholder="firstname@email.com">
+			</label>
+			<label>
+				Password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+			</label>
+
+			<p class="text-with-button">
+				Your personal details are safe with us. View our privacy policy.
+				<button>Sign in</button>
+			</p>
+		</form>
+	</section>
+
+
+	<section>
+		<header>
+			<h4>Register</h4>
+		</header>
+	</section>
+
+		<form method="get" action="javasript: return false">
+			<h3>Register</h3>
+			<label>
+				Title
+				<select name="title" id="">
+					<option value="select" disabled selected>Please select</option>
+					<option value="mr">Mr</option>
+					<option value="mrs">Mrs</option>
+					<option value="ms">Ms</option>
+					<option value="miss">Miss</option>
+					<option value="dr">Doctor</option>
+					<option value="lord">Lord</option>
+				</select>
+			</label>
+			<label>
+				First name
+				<input type="text" placeholder="John">
+			</label>
+			<label>
+				Last name
+				<input type="text" placeholder="smith">
+			</label>
+			<label>
+				Email
+				<input type="email" placeholder="john.smith@gmail.com">
+			</label>
+			<label>
+				Password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+			</label>
+			<label>
+				Retype your password
+				<input type="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+				<input-note>Minimum of 8 characters, using both letters &amp; numbers</input-note>
+			</label>
+
+			<label>
+				Phone number (Optional)
+				<input type="text" placeholder="1123 581 321">
+			</label>
+			
+			<p>Please tick the boxes below if you do not wish to recieve updates from us by email and/or text relating to Marks &amp; Spencers products and services</p>
+			
+			<checkbox-group>
+				<label><input type="checkbox" checked> <span>I do NOT want to recieve email updates</span></label>
+				<label><input type="checkbox"> <span>I do NOT want to recieve text updates</span></label>
+			</checkbox-group>
+
+			<p class="alternate">By clicking 'Create an account' you agree to cookies being used in accordance with our <a href="#">Cookie Policy</a> and to recieve updates from us, by email and text message, unless you have ticked the relevant boxes above. You can disable cookies at any time - see our <a href="#">Cookie Policy</a> for details</p>
+		
+			<p class="alternate">Your personal details are safe with us. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
+			
+			<button>Create an Account</button>
+
+		</form>
+				
+	
+	</main>
+
+@@include('./partials/html-bottom.html', {
+	"downloadPath": "/downloads/three-cols.zip"
+})
